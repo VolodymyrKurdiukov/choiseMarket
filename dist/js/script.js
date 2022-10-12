@@ -188,6 +188,26 @@ if (mainSlider.length > 0) {
 	});
 };
 
+let brandsSlider = document.querySelectorAll('.our-brands__wrapper');
+if (brandsSlider.length > 0) {
+	let brandsSlider = new Swiper('.our-brands__wrapper', {
+		wrapperClass: "our-brands__body",
+		slideClass: "our-brands__item",
+		slidesPerView: 'auto',
+		watchOverFlow: true,
+		observer: true,
+		observeParents: true,
+		observeSlideChildren: true,
+		speed: 1000,
+		centeredSlides: true,
+		loop: true
+		// navigation: {
+		// 	nextEl: ".main__next",
+		// 	prevEl: ".main__prev",
+		// }
+	});
+};
+
 
 $(document).ready(function () {
 
