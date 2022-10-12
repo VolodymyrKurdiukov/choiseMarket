@@ -165,7 +165,7 @@ function ibg() {
 ibg();
 
 
-const mainSlider = document.querySelectorAll('.main');
+let mainSlider = document.querySelectorAll('.main');
 if (mainSlider.length > 0) {
 	let mainSlider = new Swiper('.main', {
 		wrapperClass: "main__wrapper",
