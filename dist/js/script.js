@@ -193,20 +193,29 @@ if (brandsSlider.length > 0) {
 	let brandsSlider = new Swiper('.our-brands__wrapper', {
 		wrapperClass: "our-brands__body",
 		slideClass: "our-brands__item",
-		slidesPerView: 'auto',
 		watchOverFlow: true,
 		observer: true,
 		observeParents: true,
 		observeSlideChildren: true,
 		speed: 1000,
 		loop: true,
-		allowTouchMove: false,
-		centeredSlides: true,
+		slidesPerView: 'auto',
 		autoplay: {
 			delay: 2500,
 		},
 		navigation: {
 			nextEl: ".our-brands__next",
+		},
+		breakpoints: {
+			320: {
+				centeredSlides: false,
+				spaceBetween: 15,
+				allowTouchMove: true,
+			},
+			575: {
+				centeredSlides: true,
+				allowTouchMove: false,
+			},
 		}
 	});
 };
