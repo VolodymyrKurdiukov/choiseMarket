@@ -199,12 +199,15 @@ if (brandsSlider.length > 0) {
 		observeParents: true,
 		observeSlideChildren: true,
 		speed: 1000,
+		loop: true,
+		allowTouchMove: false,
 		centeredSlides: true,
-		loop: true
-		// navigation: {
-		// 	nextEl: ".main__next",
-		// 	prevEl: ".main__prev",
-		// }
+		autoplay: {
+			delay: 2500,
+		},
+		navigation: {
+			nextEl: ".our-brands__next",
+		}
 	});
 };
 
