@@ -261,21 +261,24 @@ if (topBottomSlider.length > 0) {
 	});
 };
 
-if (document.documentElement.clientWidth > 991.98) {
-	document.addEventListener('mousemove', e => {
-		move.style.left = e.pageX + "px";
-		move.style.top = e.pageY + "px";
+let news = document.querySelectorAll('.news');
+if (news.length > 0) {
+	if (document.documentElement.clientWidth > 991.98) {
+		document.addEventListener('mousemove', e => {
+			move.style.left = e.pageX + "px";
+			move.style.top = e.pageY + "px";
 
-		move2.style.left = e.pageX + "px";
-		move2.style.top = e.pageY + "px";
+			move2.style.left = e.pageX + "px";
+			move2.style.top = e.pageY + "px";
 
-		move3.style.left = e.pageX + "px";
-		move3.style.top = e.pageY + "px";
+			move3.style.left = e.pageX + "px";
+			move3.style.top = e.pageY + "px";
 
-		move4.style.left = e.pageX + "px";
-		move4.style.top = e.pageY + "px";
-	});
-}
+			move4.style.left = e.pageX + "px";
+			move4.style.top = e.pageY + "px";
+		});
+	}
+};
 
 $(document).ready(function () {
 
