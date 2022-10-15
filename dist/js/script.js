@@ -280,6 +280,25 @@ if (news.length > 0) {
 	}
 };
 
+let cards = document.querySelectorAll('.cards');
+if (cards.length > 0) {
+	if (document.documentElement.clientWidth > 991.98) {
+		document.addEventListener('mousemove', e => {
+			moreCards01.style.left = e.pageX + "px";
+			moreCards01.style.top = e.pageY + "px";
+
+			moreCards02.style.left = e.pageX + "px";
+			moreCards02.style.top = e.pageY + "px";
+
+			moreCards03.style.left = e.pageX + "px";
+			moreCards03.style.top = e.pageY + "px";
+
+			moreCards04.style.left = e.pageX + "px";
+			moreCards04.style.top = e.pageY + "px";
+		});
+	}
+};
+
 $(document).ready(function () {
 
 	$('.actions-top-header__lang').click(function (event) {
