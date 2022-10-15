@@ -1,0 +1,51 @@
+@media (any-hover: hover) {
+	.share {
+		&__facebook {
+			&:hover {
+				svg {
+					path {
+						fill: #0165e1;
+					}
+				}
+			}
+		}
+		&__instagram {
+			&:hover {
+				svg {
+					path {
+						fill: #c13584;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+	.share{
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.page-news{
+		&__img{
+			padding: 0px 0px 45% 0px;
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.page-news{
+		&__wrapper{
+			padding-top: 25px;
+			padding-right: 15px;
+			padding-bottom: 25px;
+			padding-left: 15px;
+		}
+		&__img{
+			padding: 0px 0px 70% 0px;
+		}
+	}
+}

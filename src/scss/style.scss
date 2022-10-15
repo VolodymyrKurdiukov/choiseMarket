@@ -68,15 +68,20 @@ body.lock {
 
 	&__catalog {
 	}
+
+	&__page-news {
+	}
 }
 @import "blocks/header";
 @import "blocks/main";
 @import "blocks/store";
 @import "blocks/catalog";
+@import "blocks/pageNews";
 @import "blocks/footer";
 
 @import "media/header_media";
 @import "media/main_media";
 @import "media/store_media";
 @import "media/catalog_media";
+@import "media/pageNews_media";
 @import "media/footer_media";
