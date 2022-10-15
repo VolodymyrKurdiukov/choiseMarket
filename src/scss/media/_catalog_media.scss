@@ -1,0 +1,173 @@
+@media (any-hover: hover) {
+	.side {
+		&__sub-item {
+			&:hover {
+				.side__sub-link {
+					color: $colorNine;
+				}
+			}
+		}
+	}
+	.item-catalog {
+		&:hover {
+			background-color: #fff;
+			border-radius: 5px;
+			transform: scale(1.1);
+			.item-catalog__link {
+				opacity: 1;
+				visibility: visible;
+				pointer-events: all;
+			}
+		}
+	}
+}
+@media (max-width: 1199.98px) {
+	.item-catalog {
+		&__link {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: all;
+			font-size: 10px;
+		}
+		p {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+}
+@media (max-width: 991.98px) {
+	.catalog {
+		margin-bottom: 50px;
+		&__content {
+			padding-left: 0;
+		}
+	}
+	.item-catalog {
+		&__price {
+			font-size: 14px;
+			margin-bottom: 10px;
+			span {
+				padding-right: 8px;
+				&::before {
+					width: 8px;
+					height: 8px;
+				}
+			}
+		}
+		&__point {
+			width: 35px;
+			height: 35px;
+			font-size: 14px;
+			span {
+				font-size: 10px;
+			}
+		}
+		&__row {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__label {
+			margin-bottom: 10px;
+		}
+	}
+	.side {
+		padding: 0;
+		margin: 0;
+		overflow: visible;
+		&__link {
+			color: $colorFour;
+			font-weight: 500;
+			&::after {
+				right: 2px;
+				transform: rotate(45deg);
+			}
+			&::before{
+				left: -20%;
+			}
+			svg{
+				path{
+					fill: $colorFour;
+				}
+			}
+			&.active {
+				color: #000;
+				svg {
+					path {
+						fill: #000;
+					}
+				}
+				&::after{
+					transform: rotate(-45deg);
+				}
+				&::before{
+					left: -50%;
+				}
+			}
+		}
+		&__item {
+			margin: 0;
+			padding: 10px 0px;
+		}
+		&__sub-list {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.form-filter {
+		border-radius: 0;
+		background: none;
+		padding: 0;
+		justify-content: space-between;
+		&__title,
+		&__label {
+			color: $colorOne;
+		}
+		&__title {
+			font-size: 20px;
+			font-weight: 500;
+			margin: 0;
+		}
+		&__item {
+			margin: 0;
+		}
+	}
+}
+@media (max-width: 600.98px) {
+	.form-filter {
+		flex-direction: column;
+		align-items: flex-start;
+		&__title,
+		&__item {
+			margin-bottom: 20px;
+		}
+		&__title {
+			font-size: 17px;
+		}
+	}
+	.catalog {
+		&__filter {
+			margin-bottom: 10px;
+		}
+		&__column {
+			margin-bottom: 20px;
+		}
+	}
+}
+@media (max-width: 575.98px) {
+	.catalog {
+		&__column {
+			flex: 0 0 50%;
+		}
+	}
+}
+@media (max-width: 480.98px) {
+	.item-catalog {
+		&__link {
+			white-space: nowrap;
+			padding-left: 7px;
+			padding-right: 7px;
+		}
+	}
+}

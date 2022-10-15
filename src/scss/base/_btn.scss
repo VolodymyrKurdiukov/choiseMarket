@@ -1,0 +1,57 @@
+.btn {
+	color: #ffffff;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-radius: 49px;
+	background-color: $colorFour;
+	padding: 5px 25px;
+	display: inline-block;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	&-menugray {
+		background-color: $colorSeven;
+		position: relative;
+		width: 100%;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			left: 10px;
+			width: 15px;
+			height: 15px;
+			background: url("../img/icons/menu_cart.svg") 0 0 / cover no-repeat;
+		}
+		@media (max-width: 991.98px) {
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+	}
+	&-menugreen {
+		background-color: $colorFour;
+		position: relative;
+		width: 100%;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%);
+			left: 10px;
+			width: 15px;
+			height: 15px;
+			background: url("../img/icons/menu_user.svg") 0 0 / cover no-repeat;
+		}
+		@media (max-width: 991.98px) {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+	&-light{
+		background-color: $colorTwelve;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $colorSix;
+		}
+	}
+}

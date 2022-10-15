@@ -1,0 +1,730 @@
+@media (any-hover: hover) {
+	.main {
+		&__prev,
+		&__next {
+			&:hover {
+				svg {
+					path {
+						fill: #9c9a8d;
+					}
+				}
+			}
+		}
+	}
+	.news{
+		&__item{
+			&:hover{
+				.news__img{
+					transform: scale(0.9);
+				}
+				.news__more{
+					display: block;
+					position: absolute;
+				}
+			}
+		}
+	}
+}
+//.............................................................................................
+@media (max-width: 1700.98px) {
+	.our-brands {
+		&__body {
+			height: 500px;
+		}
+		&__controls {
+			right: 15.8%;
+		}
+	}
+	.item-our-brands {
+		&.swiper-slide-active {
+			.item-our-brands__img {
+				width: 500px;
+				height: 500px;
+			}
+		}
+		&__img {
+			width: 220px;
+			height: 280px;
+		}
+	}
+}
+@media (max-width: 1600.98px) {
+	.our-brands {
+		&__controls {
+			right: 14%;
+		}
+	}
+}
+@media (max-width: 1500.98px) {
+	.our-brands {
+		&__controls {
+			right: 11.5%;
+		}
+	}
+}
+@media (max-width: 1440.98px) {
+	.our-brands {
+		&__controls {
+			right: 10%;
+		}
+		&__body {
+			height: 400px;
+		}
+	}
+	.item-our-brands {
+		&::before {
+			display: none;
+		}
+		&.swiper-slide-active {
+			.item-our-brands__img {
+				width: 400px;
+				height: 400px;
+			}
+		}
+		&__img {
+			width: 220px;
+			height: 280px;
+		}
+		&__descr {
+			border: none;
+			left: 0;
+			padding: 20px;
+			top: 60%;
+			p {
+				color: #fff;
+				font-size: 16px;
+				max-width: 300px;
+			}
+		}
+		&__logo {
+			width: 35%;
+			top: 20px;
+			left: 20px;
+		}
+	}
+	.top {
+		&__column {
+			&:first-child {
+				flex: 0 0 350px;
+			}
+		}
+		&__item {
+			flex: 0 0 250px;
+		}
+	}
+	.item-top {
+		&__link {
+			font-size: 10px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+}
+@media (max-width: 1199.98px) {
+	.main {
+		&__controls {
+			left: 30px;
+			bottom: 110px;
+		}
+		&__content {
+			justify-content: flex-start;
+			padding-top: 130px;
+		}
+	}
+	.top {
+		&__column {
+			&:first-child {
+				flex: 0 0 300px;
+			}
+		}
+		&__item {
+			flex: 0 0 200px;
+		}
+	}
+	.item-top {
+		&__link {
+			font-size: 9px;
+			padding-left: 7px;
+			padding-right: 7px;
+		}
+		&__price {
+			font-size: 14px;
+			span {
+				padding-right: 9px;
+				&::before {
+					width: 9px;
+					height: 9px;
+				}
+			}
+		}
+		&__point {
+			width: 35px;
+			height: 35px;
+		}
+	}
+	.your {
+		&__column {
+			flex: 1 1 auto;
+			&:first-child {
+				flex: 0 0 350px;
+			}
+			&:last-child {
+				flex: 0 0 100px;
+			}
+		}
+	}
+	.partners {
+		&__label {
+			&::after,
+			&::before {
+				display: none;
+			}
+		}
+		&__row {
+			&:nth-child(even) {
+				padding: 0px 70px;
+			}
+		}
+		&__bg {
+			&.ibg {
+				background-position: 75% center;
+			}
+		}
+		&__column {
+			&-ukraine {
+				display: none;
+			}
+		}
+	}
+}
+//.............................................................................................
+
+@media (max-width: 1150.98px) {
+	.main {
+		&__controls {
+			left: 15px;
+		}
+	}
+}
+//.............................................................................................
+
+@media (max-width: 991.98px) {
+	.main {
+		&__content {
+			padding-top: 0;
+			justify-content: center;
+		}
+		&__bg {
+			background-position: 50%;
+		}
+	}
+	.our-brands {
+		padding-top: 50px;
+		margin-bottom: 50px;
+		&__body {
+			height: 250px;
+			margin: 0px -7.5px;
+		}
+		&__item {
+			padding: 0px 7.5px;
+			flex: 0 0 25%;
+		}
+		&__controls {
+			position: static;
+			padding-left: 15px;
+			margin-top: 20px;
+		}
+		&__title {
+			margin-bottom: 30px;
+		}
+	}
+	.item-our-brands {
+		&.swiper-slide-active {
+			.item-our-brands__img {
+				width: 250px;
+				height: 250px;
+			}
+		}
+		&__img {
+			width: 250px;
+			height: 250px;
+		}
+		&__descr,
+		&__logo {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: all;
+		}
+		&__descr {
+			top: 50%;
+			p {
+				font-size: 10px;
+				max-width: 220px;
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.benefits-brands {
+		padding-bottom: 0px;
+		&__row {
+			margin: 0px -15px;
+		}
+		&__column {
+			padding: 0px 15px;
+		}
+		&__label {
+			font-size: 10px;
+		}
+		&__item {
+			justify-content: center;
+		}
+	}
+	.top {
+		margin-bottom: 50px;
+		&__conainer-right {
+			padding-left: 15px;
+		}
+		&__conainer-left {
+			padding-right: 15px;
+		}
+		&__column {
+			&:first-child {
+				flex: 0 0 250px;
+			}
+		}
+		&__item {
+			flex: 0 0 250px;
+		}
+	}
+	.your {
+		margin-bottom: 50px;
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__column {
+			flex: 1 1 auto;
+			&:first-child {
+				flex: 0 0 250px;
+			}
+			&:last-child {
+				display: none;
+			}
+		}
+	}
+	.partners {
+		margin-bottom: 50px;
+		&__row {
+			margin: 0px -25px;
+		}
+		&__column {
+			padding: 0px 25px;
+			flex: 0 0 50%;
+		}
+		&__bg {
+			display: none;
+			&.ibg {
+				background-position: center;
+				background-size: contain;
+			}
+			&-mobile {
+				display: block;
+			}
+		}
+	}
+	.charity {
+		margin-bottom: 50px;
+		&__title{
+			margin-bottom: 20px;
+		}
+		&__label {
+			font-size: 20px;
+			max-width: 100%;
+		}
+		&__item {
+			&::before {
+				@include adaptiv-value("top", -20, 40, 1);
+			}
+			&::after {
+				@include adaptiv-value("right", -10, -5, 1);
+			}
+		}
+	}
+	.news{
+		margin-bottom: 20px;
+		&__item{
+			position: relative;
+		}
+		&__more{
+			display: block;
+			position: absolute;
+			top: 60%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+	}
+}
+//.............................................................................................
+
+@media (max-width: 991.98px) and (orientation: landscape) {
+	.main {
+		&__title {
+			font-size: 20px;
+		}
+		&__controls {
+			justify-content: flex-end;
+			right: 0;
+			bottom: 100px;
+		}
+		&__prev {
+			order: 2;
+		}
+		&__next {
+			order: 3;
+		}
+		&__scrollbar {
+			order: 1;
+		}
+	}
+}
+//.............................................................................................
+
+@media (max-width: 767.98px) {
+	.brands {
+		&__img {
+			width: 70%;
+		}
+	}
+	.benefits-brands {
+		&__row {
+			flex-wrap: wrap;
+		}
+		&__column {
+			flex: 0 0 50%;
+			border: none;
+			margin-bottom: 20px;
+		}
+		&__label {
+			font-size: 14px;
+			max-width: 100%;
+		}
+		&__item {
+			justify-content: center;
+		}
+	}
+	.item-our-brands {
+		&.swiper-slide-active {
+			.item-our-brands__img {
+				width: 180px;
+			}
+		}
+		&__img {
+			width: 180px;
+		}
+		&__descr {
+			top: 40%;
+			p {
+				font-size: 10px;
+				max-width: 150px;
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.top {
+		&__column {
+			&:first-child {
+				flex: 0 0 200px;
+			}
+		}
+		&__item {
+			flex: 0 0 200px;
+		}
+	}
+	.your {
+		&__sub-label {
+			font-size: 12px;
+		}
+		&__label {
+			font-size: 20px;
+		}
+		&__body {
+			padding-left: 10px;
+			padding-right: 0;
+		}
+	}
+	.partners {
+		&__wrapper {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		&__row {
+			&:nth-child(even) {
+				padding: 0px 40px;
+				margin-top: 40px;
+			}
+		}
+		&__sub-title {
+			font-size: 14px;
+		}
+	}
+	.charity {
+		&__item {
+			background-color: #fff;
+			border-radius: 5px;
+			&::before {
+				top: 50%;
+				transform: translate(0, -50%);
+				left: 10px;
+			}
+			&::after {
+				display: none;
+			}
+		}
+		&__bg {
+			display: none;
+		}
+		&__body{
+			@include adaptiv-value("margin-left", 300, 150, 1);
+		}
+	}
+	.news{
+		&__row{
+			flex-wrap: wrap;
+		}
+		&__column{
+			flex: 0 0 50%;
+			margin-bottom: 30px;
+		}
+		&__more{
+			font-size: 10px;
+			white-space: nowrap;
+			top: 73%;
+			@include adaptiv-value("width", 300, 100, 1);
+		}
+	}
+}
+//.............................................................................................
+
+@media (max-width: 575.98px) {
+	.main {
+		&__prev,
+		&__next {
+			width: 30px;
+			height: 30px;
+		}
+		&__scrollbar {
+			width: 180px;
+		}
+		&__bg {
+			background-position: 65%;
+		}
+	}
+	.our-brands {
+		padding: 50px 15px 0 15px;
+		&__wrapper {
+			overflow: visible;
+		}
+		&__container {
+			padding: 0;
+		}
+		&__body {
+			margin: 0;
+		}
+		&__item {
+			flex: 0 0 50%;
+			padding: 0;
+		}
+		&__controls {
+			padding-left: 0;
+		}
+	}
+	.item-our-brands {
+		&.swiper-slide-active {
+			.item-our-brands__img {
+				width: 100%;
+			}
+		}
+		&__body {
+			width: 100%;
+		}
+		&__img {
+			width: 100%;
+		}
+		&__logo {
+			top: 10px;
+			left: 10px;
+			width: 70%;
+		}
+		&__descr {
+			left: 10px;
+			top: 45%;
+			padding: 0;
+			p {
+				max-width: 130px;
+			}
+		}
+		&__link {
+			font-size: 10px;
+		}
+	}
+	.top {
+		&__column {
+			&:first-child {
+				display: none;
+			}
+			&:last-child {
+				padding-left: 0;
+			}
+		}
+		&__item {
+			flex: 0 0 200px;
+		}
+		&__scrollbar {
+			display: none;
+		}
+		&__body {
+			margin: 0px -7.5px;
+		}
+		&__item {
+			padding: 0px 7.5px;
+		}
+	}
+	.your {
+		&__row {
+			align-items: flex-start;
+		}
+		&__column {
+			flex: 1 1 auto;
+			&:first-child {
+				flex: 0 0 150px;
+			}
+		}
+		&__sub-label {
+			font-size: 10px;
+			margin-bottom: 7px;
+		}
+	}
+	.partners {
+		&__wrapper {
+			padding-top: 20px;
+			padding-bottom: 30px;
+		}
+		&__row {
+			flex-wrap: wrap;
+			&:nth-child(even) {
+				padding: 0px 0px;
+				margin-top: 0;
+			}
+		}
+		&__column {
+			flex: 1 1 100%;
+			margin-bottom: 20px;
+			&:last-child {
+				text-align: left;
+			}
+		}
+		&__label {
+			margin-bottom: 10px;
+		}
+		&__sub-title {
+			font-size: 10px;
+		}
+		&__buttons {
+			align-self: auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__link {
+			text-align: center;
+			margin-right: 15px;
+			margin-bottom: 10px;
+		}
+	}
+	.charity {
+		&__item {
+			&::before {
+				left: 100%;
+				transform: translate(-110%,-50%);
+			}
+		}
+		&__body{
+			margin: 0;
+			padding: 20px;
+		}
+	}
+	.news{
+		&__label{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		p{
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: 12px;
+		}
+		&__more{
+			top: 57%;
+		}
+	}
+}
+@media (max-width: 480.98px) {
+	.benefits-brands {
+		&__column {
+			flex: 1 1 100%;
+			margin-bottom: 10px;
+			padding: 0;
+		}
+		&__label {
+			font-size: 12px;
+		}
+		&__item {
+			justify-content: flex-start;
+		}
+	}
+	.your {
+		&__column {
+			flex: 1 1 auto;
+			&:first-child {
+				display: none;
+			}
+		}
+		&__body {
+			padding-left: 0;
+		}
+	}
+	.partners {
+		&__wrapper {
+			padding-bottom: 10px;
+		}
+		&__link {
+			width: 200px;
+		}
+	}
+	.charity{
+		&__item{
+			&::before{
+				display: none;
+			}
+		}
+		&__body{
+			max-width: 100%;
+		}
+	}
+	.news{
+		&__label{
+			font-size: 12px;
+		}
+	}
+}
+//.............................................................................................
+
+@media (min-width: 1920.98px) {
+	.item-our-brands {
+		&__body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&__img {
+		}
+	}
+}

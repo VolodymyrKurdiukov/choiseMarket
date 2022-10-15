@@ -1,0 +1,82 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/null.scss";
+@import "base/fonts";
+@import "base/links";
+@import "base/btn";
+
+* {
+	font-family: "Cera Pro";
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+body.lock {
+	overflow: hidden;
+	transition: all 1s ease;
+	&::before {
+		content: "";
+		background: rgba(217, 217, 217, 0.9);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: 5;
+		transition: all 1s ease;
+	}
+}
+.container {
+	max-width: 1140px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	&-right {
+		padding-left: calc((100% - 1140px) / 2 + 15px);
+	}
+	&-left {
+		padding-right: calc((100% - 1140px) / 2);
+	}
+}
+.page {
+	background-color: #fafafa;
+	flex: 1 1 auto;
+	&__box {
+	}
+
+	&__main {
+	}
+	&__our-brands {
+	}
+	&__top {
+	}
+	&__your {
+	}
+	&__partners {
+	}
+	&__charity {
+	}
+	&__news {
+	}
+
+	&__cards {
+	}
+
+	&__catalog {
+	}
+}
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/store";
+@import "blocks/catalog";
+@import "blocks/footer";
+
+@import "media/header_media";
+@import "media/main_media";
+@import "media/store_media";
+@import "media/catalog_media";
+@import "media/footer_media";

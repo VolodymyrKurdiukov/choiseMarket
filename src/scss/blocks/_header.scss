@@ -1,0 +1,252 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	z-index: 50;
+}
+
+//.............................................................................................
+
+.top-header {
+	background-color: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	// .top-header__row
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	// .top-header__column
+	&__column {
+		flex: 0 0 33.333%;
+	}
+
+	// .top-header__logo
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		z-index: 11;
+	}
+}
+
+//.............................................................................................
+
+.bottom-header {
+	background-color: rgba(42, 42, 42, 0.4);
+}
+
+//.............................................................................................
+
+.form-top-header {
+	display: flex;
+	align-items: center;
+
+	// .form-top-header__label
+	&__label {
+		color: $colorOne;
+	}
+
+	// .form-top-header__input
+	&__input {
+		border-bottom: 1px solid #000;
+		padding-bottom: 2px;
+	}
+
+	// .form-top-header__button
+	&__button {
+		border-bottom: 1px solid #000;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+//.............................................................................................
+
+.actions-top-header {
+	display: flex;
+	justify-content: flex-end;
+
+	// .actions-top-header__list
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	// .actions-top-header__item
+	&__item {
+		&:not(:last-child) {
+			@include adaptiv-value("margin-right", 30, 10, 1);
+		}
+
+		// .actions-top-header__item-lang
+		&-lang {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			background-color: $colorTwo;
+			border-radius: 50%;
+			color: $colorThree;
+			font-weight: 500;
+			text-transform: uppercase;
+			width: 45px;
+			height: 45px;
+			position: relative;
+		}
+	}
+
+	// .actions-top-header__user
+	&__user {
+		img {
+			max-width: 100%;
+		}
+	}
+
+	// .actions-top-header__cart
+	&__cart {
+		img {
+			max-width: 100%;
+		}
+	}
+
+	// .actions-top-header__lang
+	&__lang {
+		display: block;
+		position: relative;
+		z-index: 1;
+	}
+}
+
+//.............................................................................................
+
+.lang {
+	// .lang__list
+	&__list {
+		position: absolute;
+		top: 0%;
+		left: 0;
+		width: 100%;
+		height: 150%;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: $colorTwo;
+		border-radius: 0 0 60px 60px;
+		transition: all 0.3s ease;
+		&.active {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: all;
+			top: 50%;
+		}
+	}
+
+	// .lang__item
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 7px;
+		}
+	}
+
+	// .lang__link
+	&__link {
+		display: block;
+	}
+}
+
+//.............................................................................................
+
+.menu {
+	// .menu__list
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 50px;
+	}
+
+	// .menu__item
+	&__item {
+		cursor: pointer;
+		position: relative;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+
+	// .menu__link
+	&__link {
+		color: #ffffff;
+		text-transform: uppercase;
+		transition: all 0.3s ease;
+		// .menu__link-arrow
+		&-arrow {
+			position: relative;
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				@include adaptiv-value("right", -15, -5, 1);
+				transform: translate(0, -100%);
+				width: 0;
+				height: 0;
+				transition: all 0.3s ease;
+				border-left: 4px solid rgba(0, 0, 0, 0);
+				border-right: 4px solid rgba(0, 0, 0, 0);
+				border-top: 4px solid #fff;
+			}
+		}
+	}
+
+	// .menu__sub-list
+	&__sub-list {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		min-width: 160px;
+		padding: 15px;
+		background-color: rgba(42, 42, 42, 0.4);
+		transition: all 0.5s ease;
+		text-align: right;
+		border-radius: 0 0 5px 5px;
+	}
+
+	// .menu__sub-item
+	&__sub-item {
+		&:not(:last-child) {
+			margin-bottom: 7px;
+		}
+	}
+
+	// .menu__sub-link
+	&__sub-link {
+		color: #ffffff;
+		text-transform: uppercase;
+		transition: all 0.3s ease;
+	}
+
+	// .menu__btn
+	&__btn {
+		display: none;
+	}
+}
+
+//.............................................................................................
+
+.lang-menu {
+	display: none;
+}
