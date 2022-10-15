@@ -487,12 +487,12 @@
 		}
 	}
 	.news{
-		&__row{
-			flex-wrap: wrap;
-		}
+		// &__row{
+		// 	flex-wrap: wrap;
+		// }
 		&__column{
 			flex: 0 0 50%;
-			margin-bottom: 30px;
+			// margin-bottom: 30px;
 		}
 		&__more{
 			font-size: 10px;

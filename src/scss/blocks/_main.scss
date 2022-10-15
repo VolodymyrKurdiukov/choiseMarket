@@ -937,7 +937,7 @@
 //========================================================================================================================================================
 
 .news {
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 	// .news__container
 
 	&__container {
@@ -954,6 +954,7 @@
 	&__row {
 		display: flex;
 		margin: 0px -15px;
+		flex-wrap: wrap;
 	}
 
 	// .news__column
@@ -961,6 +962,7 @@
 	&__column {
 		flex: 0 0 25%;
 		padding: 0px 15px;
+		margin-bottom: 30px;
 	}
 
 	// .news__item

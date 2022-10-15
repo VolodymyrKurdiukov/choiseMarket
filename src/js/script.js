@@ -279,6 +279,36 @@ if (news.length > 0) {
 		});
 	}
 };
+let newsMore = document.querySelectorAll('.news-company');
+if (newsMore.length > 0) {
+	if (document.documentElement.clientWidth > 991.98) {
+		document.addEventListener('mousemove', e => {
+			move.style.left = e.pageX + "px";
+			move.style.top = e.pageY + "px";
+
+			move2.style.left = e.pageX + "px";
+			move2.style.top = e.pageY + "px";
+
+			move3.style.left = e.pageX + "px";
+			move3.style.top = e.pageY + "px";
+
+			move4.style.left = e.pageX + "px";
+			move4.style.top = e.pageY + "px";
+
+			move5.style.left = e.pageX + "px";
+			move5.style.top = e.pageY + "px";
+
+			move6.style.left = e.pageX + "px";
+			move6.style.top = e.pageY + "px";
+
+			move7.style.left = e.pageX + "px";
+			move7.style.top = e.pageY + "px";
+
+			move8.style.left = e.pageX + "px";
+			move8.style.top = e.pageY + "px";
+		});
+	}
+};
 
 let cards = document.querySelectorAll('.cards');
 if (cards.length > 0) {
