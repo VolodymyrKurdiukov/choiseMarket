@@ -30,9 +30,14 @@
 		&__move {
 			display: block;
 			position: absolute;
-			top: 85%;
-			left: 50%;
-			transform: translate(-50%, 0);
+			bottom: 10px;
+			left: 10px;
+			transform: translate(0%, 0%);
+		}
+		&__label{
+			top: 10px;
+			left: 10px;
+			transform: translate(0%, 0%);
 		}
 	}
 }
@@ -63,9 +68,6 @@
 		position: relative;
 		&__label{
 			font-size: 20px;
-		}
-		&__move{
-			font-size: 14px;
 		}
 	}
 }
