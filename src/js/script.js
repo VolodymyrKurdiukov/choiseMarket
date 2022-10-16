@@ -201,7 +201,7 @@ if (brandsSlider.length > 0) {
 		loop: true,
 		slidesPerView: 'auto',
 		autoplay: {
-			delay: 1000,
+			delay: 2500,
 		},
 		navigation: {
 			nextEl: ".our-brands__controls",

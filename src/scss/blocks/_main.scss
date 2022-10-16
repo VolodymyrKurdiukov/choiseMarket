@@ -190,6 +190,9 @@
 		margin: 0px -15px;
 		@include adaptiv-value("height", 600, 400, 1);
 		width: 100%;
+		position: relative;
+		
+		right: 16.7%;
 	}
 
 	// .our-brands__item
