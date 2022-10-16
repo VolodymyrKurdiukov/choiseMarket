@@ -261,6 +261,21 @@ if (topBottomSlider.length > 0) {
 	});
 };
 
+let sliderCards = document.querySelectorAll('.slider-cards__wrapper');
+if (sliderCards.length > 0) {
+	let sliderCards = new Swiper('.slider-cards__wrapper', {
+		wrapperClass: "slider-cards__body",
+		slideClass: "slider-cards__item",
+		slidesPerView: 'auto',
+		watchOverFlow: true,
+		observer: true,
+		observeParents: true,
+		observeSlideChildren: true,
+		speed: 1000,
+		loop: true,
+	});
+};
+
 let news = document.querySelectorAll('.news');
 if (news.length > 0) {
 	if (document.documentElement.clientWidth > 991.98) {

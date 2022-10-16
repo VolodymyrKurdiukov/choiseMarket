@@ -1,0 +1,94 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1440.98px) {
+	.about-company-page {
+		&__row {
+			padding-left: 0;
+		}
+	}
+	.slider-cards {
+		padding-left: 0;
+		&__column {
+			&:first-child {
+				padding-right: 14px;
+			}
+		}
+		&__body {
+			margin: 0px -7px;
+		}
+		&__item {
+			flex: 0 0 20%;
+			padding: 0px 7px;
+		}
+	}
+}
+@media (max-width: 1199.98px) {
+	.slider-cards {
+		&__column {
+			&:first-child {
+				flex: 0 0 300px;
+			}
+		}
+		&__item {
+			flex: 0 0 16.667%;
+		}
+	}
+}
+@media (max-width: 991.98px) {
+	.about-company-page {
+		&__link {
+			margin-top: 20px;
+			margin-bottom: 50px;
+		}
+		&__column {
+			padding: 0px 7px;
+			&:nth-child(even) {
+				margin-top: 0;
+			}
+		}
+		&__row {
+			margin: 0px -7px 20px -7px;
+		}
+	}
+	.slider-cards {
+		&__item {
+			flex: 0 0 25%;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.slider-cards {
+		&__column {
+			&:first-child {
+				flex: 0 0 200px;
+			}
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.slider-cards {
+		padding-left: 15px;
+		&__column {
+			&:first-child {
+				flex: 0 0 130px;
+			}
+		}
+		&__bg {
+			padding: 0px 0px 150% 0px;
+		}
+	}
+	.about-company-page {
+		&__img {
+			padding: 0px 0px 180% 0px;
+		}
+	}
+}
+@media (min-width: 1920.98px) {
+	.slider-cards {
+		&__bg {
+			padding: 0px 0px 120% 0px;
+		}
+	}
+}
