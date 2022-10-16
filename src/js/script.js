@@ -276,6 +276,30 @@ if (sliderCards.length > 0) {
 	});
 };
 
+let businessSlider = document.querySelectorAll('.business__wrapper');
+if (businessSlider.length > 0) {
+	let businessSlider = new Swiper('.business__wrapper', {
+		wrapperClass: "business__body",
+		slideClass: "business__item",
+		direction: 'vertical',
+		slidesPerView: 'auto',
+		speed: 500,
+		mousewheel: {
+			sensitivity: 1,
+		},
+		watchOverFlow: true,
+		observer: true,
+		observeParents: true,
+		observeSlideChildren: true,
+		scrollbar: {
+			el: '.business__scroll',
+			dragClass: "business__drag-scroll",
+			draggable: true,
+			dragSize: 40,
+		},
+	});
+};
+
 let news = document.querySelectorAll('.news');
 if (news.length > 0) {
 	if (document.documentElement.clientWidth > 991.98) {

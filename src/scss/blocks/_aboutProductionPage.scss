@@ -40,7 +40,6 @@
 		color: $colorOne;
 		font-size: 14px;
 		line-height: 160%;
-		max-width: 920px;
 		&:not(:last-child) {
 			@include adaptiv-value("margin-bottom", 20, 10, 1);
 		}

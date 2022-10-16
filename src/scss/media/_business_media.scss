@@ -1,0 +1,63 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+	.business {
+		&__column-bottom {
+			&:last-child {
+				padding-right: 30px;
+			}
+		}
+		&__scroll {
+			right: 15px;
+		}
+	}
+}
+@media (max-width: 991.98px) {
+	.business {
+		&__wrapper-img {
+			padding: 0;
+		}
+		&__row-bottom {
+			margin: 0px -7px 50px -7px;
+		}
+		&__column-bottom {
+			padding: 0px 7px;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.business {
+		&__row-bottom {
+			flex-wrap: wrap;
+		}
+		&__column-bottom {
+			flex: 1 1 100%;
+			&:first-child {
+				flex: 1 1 100%;
+				margin-bottom: 20px;
+			}
+			&:last-child {
+				padding-right: 15px;
+			}
+		}
+		&__scroll {
+			right: 0px;
+		}
+		&__row {
+			flex-wrap: wrap;
+			margin: 0px -7px 20px -7px;
+		}
+		&__column {
+			padding: 0px 7px;
+			&:first-child {
+				flex: 1 1 100%;
+				margin-bottom: 20px;
+			}
+			flex: 1 1 100%;
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+}
