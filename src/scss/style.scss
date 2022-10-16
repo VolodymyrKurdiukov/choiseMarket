@@ -77,6 +77,9 @@ body.lock {
 
 	&__about-product-page {
 	}
+
+	&__about-production-page {
+	}
 }
 @import "blocks/header";
 @import "blocks/main";
@@ -85,6 +88,7 @@ body.lock {
 @import "blocks/pageNews";
 @import "blocks/aboutCompanyPage";
 @import "blocks/aboutProductPage";
+@import "blocks/aboutProductionPage";
 @import "blocks/footer";
 
 @import "media/header_media";
@@ -94,4 +98,5 @@ body.lock {
 @import "media/pageNews_media";
 @import "media/aboutCompanyPage_media";
 @import "media/aboutProductPage_media";
+@import "media/aboutProductionPage_media";
 @import "media/footer_media";
