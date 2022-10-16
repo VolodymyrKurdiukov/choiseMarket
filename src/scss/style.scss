@@ -71,12 +71,16 @@ body.lock {
 
 	&__page-news {
 	}
+
+			&__about-company-page {
+		}
 }
 @import "blocks/header";
 @import "blocks/main";
 @import "blocks/store";
 @import "blocks/catalog";
 @import "blocks/pageNews";
+@import "blocks/aboutCompanyPage";
 @import "blocks/footer";
 
 @import "media/header_media";
