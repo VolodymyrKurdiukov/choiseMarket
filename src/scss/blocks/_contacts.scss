@@ -104,6 +104,7 @@
 	// .form-contscts__input
 
 	&__input {
+		border-radius: 0 !important;
 		width: 100%;
 		background-color: transparent;
 		padding-bottom: 5px;
@@ -120,6 +121,7 @@
 	// .form-contscts__textarea
 
 	&__textarea {
+		border-radius: 0 !important;
 		width: 100%;
 		resize: none;
 		height: 120px;
