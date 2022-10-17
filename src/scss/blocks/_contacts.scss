@@ -99,6 +99,7 @@
 
 	&__item {
 		@include adaptiv-value("margin-bottom", 40, 20, 1);
+		border-bottom: 1px solid #000;
 	}
 
 	// .form-contscts__input
@@ -108,7 +109,7 @@
 		width: 100%;
 		background-color: transparent;
 		padding-bottom: 5px;
-		border-bottom: 1px solid #000;
+		
 		color: $colorOne;
 		@include adaptiv-value("font-size", 15, 14, 1);
 		text-transform: uppercase;
@@ -127,7 +128,6 @@
 		height: 120px;
 		background-color: transparent;
 		padding-bottom: 5px;
-		border-bottom: 1px solid #000;
 		color: $colorOne;
 		@include adaptiv-value("font-size", 15, 14, 1);
 		text-transform: uppercase;
