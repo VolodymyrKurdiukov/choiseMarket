@@ -1,0 +1,206 @@
+.volunteer {
+	@include adaptiv-value("margin-bottom", 110, 50, 1);
+	// .volunteer__container
+
+	&__container {
+	}
+
+	// .volunteer__row
+
+	&__row {
+		display: flex;
+		margin: 0px 0px 0 -15px;
+	}
+
+	// .volunteer__column
+
+	&__column {
+		flex: 0 0 50%;
+		padding: 0px 15px;
+		position: relative;
+	}
+	//.volunteer__body
+	&__body {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	// .volunteer__title
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	// .volunteer__sub-title
+
+	&__sub-title {
+		color: $colorOne;
+		@include adaptiv-value("font-size", 16, 14, 1);
+		line-height: 120%;
+		text-transform: uppercase;
+		@include adaptiv-value("margin-bottom", 30, 20, 1);
+		max-width: 445px;
+	}
+	p {
+		color: $colorOne;
+		font-size: 14px;
+		line-height: 160%;
+		max-width: 525px;
+	}
+	// .volunteer__img
+
+	&__img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		&.ibg{
+			background-size: contain;
+		}
+	}
+
+	// .volunteer__form
+
+	&__form {
+	}
+}
+.form-volunteer {
+	border-radius: 5px;
+	border: 1px solid $colorNineteen;
+	background-color: #ffffff;
+	@include adaptiv-value("padding-top", 70, 30, 1);
+	@include adaptiv-value("padding-right", 100, 15, 1);
+	@include adaptiv-value("padding-bottom", 90, 30, 1);
+	@include adaptiv-value("padding-left", 100, 15, 1);
+	@include adaptiv-value("margin-top", 70, 50, 1);
+	// .form-volunteer__title
+
+	&__title {
+		color: $colorOne;
+		@include adaptiv-value("font-size", 18, 14, 1);
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	// .form-volunteer__item
+
+	&__item {
+		margin-bottom: 20px;
+	}
+
+	// .form-volunteer__label
+
+	&__label {
+		color: $colorOne;
+		@include adaptiv-value("font-size", 16, 14, 1);
+		margin-bottom: 10px;
+		display: block;
+	}
+
+	// .form-volunteer__input
+
+	&__input {
+		border-radius: 2px;
+		border: 1px solid $colorEighteen;
+		background-color: #ffffff;
+		width: 100%;
+		padding: 15px 20px;
+		color: $colorNine;
+		font-size: 14px;
+		&::placeholder {
+			color: $colorNine;
+			font-size: 14px;
+		}
+	}
+
+	// .form-volunteer__row
+
+	&__row {
+		display: flex;
+		margin: 0px -15px;
+	}
+
+	// .form-volunteer__column
+
+	&__column {
+		flex: 0 0 50%;
+		padding: 0px 15px;
+	}
+
+	// .form-volunteer__textarea
+
+	&__textarea {
+		border-radius: 2px;
+		border: 1px solid $colorEighteen;
+		background-color: #ffffff;
+		resize: none;
+		width: 100%;
+		height: 200px;
+		padding: 15px 20px;
+		color: $colorNine;
+		font-size: 14px;
+		&::placeholder {
+			color: $colorNine;
+			font-size: 14px;
+		}
+	}
+
+	// .form-volunteer__checkbox-wrapper
+
+	&__checkbox-wrapper {
+	}
+
+	// .form-volunteer__checkbox-label
+
+	&__checkbox-label {
+		color: $colorTwenty;
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		cursor: pointer;
+		line-height: 120%;
+		a {
+			text-decoration: underline;
+			color: $colorFour;
+			display: inline-block;
+			margin: 0px 5px;
+		}
+		&::before {
+			content: "";
+			flex: 0 0 19px;
+			width: 19px;
+			height: 19px;
+			background-color: #fff;
+			border: 1px solid $colorEighteen;
+			border-radius: 2px;
+			align-self: flex-start;
+			margin-right: 15px;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			width: 15px;
+			height: 15px;
+			top: 2px;
+			left: 2px;
+			background: url("../img/icons/checkbox.svg") 0 0 / cover no-repeat;
+			z-index: 1;
+			transform: scale(0);
+			transition: all 0.3s ease;
+		}
+	}
+
+	// .form-volunteer__checkbox
+
+	&__checkbox {
+		display: none;
+		&:checked + .form-volunteer__checkbox-label::after {
+			transform: scale(1);
+		}
+	}
+
+	// .form-volunteer__link
+
+	&__link {
+	}
+}

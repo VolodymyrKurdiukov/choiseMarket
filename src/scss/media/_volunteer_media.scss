@@ -1,0 +1,45 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 850.98px) {
+	.form-volunteer {
+		&__checkbox-label {
+			flex-wrap: wrap;
+			a {
+				margin: 0px 5px 0 34px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.volunteer {
+		&__column {
+			flex: 1 1 100%;
+			padding: 0;
+			&:last-child {
+				display: none;
+			}
+		}
+		&__row {
+			margin: 0;
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.form-volunteer {
+		border: none;
+		border-radius: 0px;
+		margin: 50px -15px 0 -15px;
+		&__row{
+			flex-wrap: wrap;
+			margin: 0;
+		}
+		&__column{
+			padding: 0;
+			flex: 1 1 100%;
+		}
+	}
+}
