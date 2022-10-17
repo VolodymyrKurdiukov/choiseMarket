@@ -1,0 +1,53 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1060.98px) {
+	.weight {
+		p {
+			max-width: 550px;
+		}
+	}
+}
+@media (max-width: 991.98px) {
+	.weight {
+		&__row {
+			flex-wrap: wrap;
+			margin-bottom: 50px;
+		}
+		&__column {
+			flex: 1 1 100%;
+			&:last-child {
+				flex: 1 1 100%;
+				flex-direction: row;
+				align-items: flex-start;
+				position: static;
+				margin: 20px -7px 0 -7px;
+			}
+		}
+		&__img{
+			flex: 0 0 50%;
+			height: 100%;
+			padding: 0px 7px;
+			&-small{
+				position: static;
+				
+			}
+		}
+		p {
+			max-width: 100%;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 480.98px) {
+	.weight{
+		&__img{
+			width: 100%;
+			&-small{
+				width: 100%;
+			}
+		}
+	}
+}
