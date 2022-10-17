@@ -349,7 +349,7 @@ if (newsMore.length > 0) {
 	}
 };
 
-let cards = document.querySelectorAll('.cards');
+let cards = document.querySelectorAll('.cards-main');
 if (cards.length > 0) {
 	if (document.documentElement.clientWidth > 991.98) {
 		document.addEventListener('mousemove', e => {
