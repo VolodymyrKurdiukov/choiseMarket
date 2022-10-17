@@ -106,10 +106,11 @@
 
 	&__input {
 		border-radius: 0 !important;
+		border: none !important;
 		width: 100%;
 		background-color: transparent;
 		padding-bottom: 5px;
-		
+
 		color: $colorOne;
 		@include adaptiv-value("font-size", 15, 14, 1);
 		text-transform: uppercase;
@@ -123,6 +124,7 @@
 
 	&__textarea {
 		border-radius: 0 !important;
+		border: none !important;
 		width: 100%;
 		resize: none;
 		height: 120px;
