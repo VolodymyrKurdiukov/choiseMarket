@@ -1,0 +1,63 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+	.contacts {
+		&__row {
+			flex-wrap: wrap;
+		}
+		&__column {
+			flex: 1 1 100%;
+			&:first-child {
+				flex: 1 1 100%;
+				margin-bottom: 20px;
+			}
+		}
+		&__sub-row {
+			flex-wrap: wrap;
+		}
+		&__sub-column {
+			flex: 0 0 50%;
+			&:first-child {
+				flex: 1 1 100%;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.contacts{
+		&__map{
+			iframe{
+				height: 350px;
+			}
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.form-contscts{
+		&__row{
+			flex-wrap: wrap;
+		}
+		&__column{
+			flex: 1 1 100%;
+		}
+	}
+	.contacts{
+		&__map{
+			iframe{
+				height: 250px;
+			}
+		}
+	}
+}
+@media (max-width: 480.98px){
+.contacts{
+	&__sub-column{
+		flex: 1 1 100%;
+	}
+}
+}

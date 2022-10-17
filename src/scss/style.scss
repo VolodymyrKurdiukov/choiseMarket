@@ -86,6 +86,9 @@ body.lock {
 
 	&__volunteer {
 	}
+
+	&__contacts {
+	}
 }
 @import "blocks/header";
 @import "blocks/main";
@@ -97,6 +100,7 @@ body.lock {
 @import "blocks/aboutProductionPage";
 @import "blocks/business";
 @import "blocks/volunteer";
+@import "blocks/contacts";
 @import "blocks/footer";
 
 @import "media/header_media";
@@ -109,4 +113,5 @@ body.lock {
 @import "media/aboutProductionPage_media";
 @import "media/business_media";
 @import "media/volunteer_media";
+@import "media/contacts_media";
 @import "media/footer_media";
