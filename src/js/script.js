@@ -368,6 +368,21 @@ if (cards.length > 0) {
 	}
 };
 
+let cardsPrograms = document.querySelectorAll('.cards-programs');
+if (cardsPrograms.length > 0) {
+	if (document.documentElement.clientWidth > 991.98) {
+		document.addEventListener('mousemove', e => {
+			moreCardsPrograms01.style.left = e.pageX + "px";
+			moreCardsPrograms01.style.top = e.pageY + "px";
+
+			moreCardsPrograms02.style.left = e.pageX + "px";
+			moreCardsPrograms02.style.top = e.pageY + "px";
+
+			moreCardsPrograms03.style.left = e.pageX + "px";
+			moreCardsPrograms03.style.top = e.pageY + "px";
+		});
+	}
+};
 
 
 let selecton = document.querySelectorAll('.filter');
