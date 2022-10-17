@@ -1,0 +1,48 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+	.programs {
+		&__wrapper {
+			padding: 0;
+		}
+	}
+}
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+	.programs {
+		&__row {
+			flex-wrap: wrap;
+		}
+		&__column {
+			flex: 1 1 100%;
+			&:first-child {
+				flex: 1 1 100%;
+			}
+		}
+		&__sub-title {
+			max-width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.programs {
+		.item-cards {
+			&__label {
+				text-align: left;
+			}
+		}
+		.cards {
+			&__row {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			&__column {
+				flex: 0 0 50%;
+			}
+		}
+	}
+}
