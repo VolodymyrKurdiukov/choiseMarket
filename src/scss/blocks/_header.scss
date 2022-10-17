@@ -219,10 +219,13 @@
 		pointer-events: none;
 		min-width: 160px;
 		padding: 15px;
-		background-color: rgba(42, 42, 42, 0.4);
+		background-color: $colorSeventeen;
 		transition: all 0.5s ease;
 		text-align: right;
 		border-radius: 0 0 5px 5px;
+		&-main {
+			background-color: rgba(42, 42, 42, 0.4);
+		}
 	}
 
 	// .menu__sub-item
