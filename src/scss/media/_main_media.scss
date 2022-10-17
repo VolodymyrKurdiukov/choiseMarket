@@ -157,11 +157,12 @@
 		}
 		&__price {
 			font-size: 14px;
+			display: flex;
 			span {
-				padding-right: 9px;
 				&::before {
 					width: 9px;
 					height: 9px;
+					right: 3px;
 				}
 			}
 		}
