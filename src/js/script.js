@@ -325,6 +325,28 @@ if (productCardSlider.length > 0) {
 		},
 	});
 };
+
+let similarSlider = document.querySelectorAll('.similar__wrapper');
+if (similarSlider.length > 0) {
+	let similarSlider = new Swiper('.similar__wrapper', {
+		wrapperClass: "similar__body",
+		slideClass: "similar__item",
+		slidesPerView: 'auto',
+		watchOverFlow: true,
+		observer: true,
+		observeParents: true,
+		observeSlideChildren: true,
+		speed: 1000,
+		loop: true,
+		scrollbar: {
+			el: '.similar__scrollbar',
+			dragClass: "similar__drag-scroll",
+			draggable: true,
+			dragSize: 100,
+		},
+	});
+};
+
 //========================================================================================================================================================
 
 let news = document.querySelectorAll('.news');

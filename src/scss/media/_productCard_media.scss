@@ -62,6 +62,42 @@
 		&__tab {
 		}
 	}
+	.similar {
+		&__wrapper{
+			overflow: hidden;
+		}
+		&__column {
+			&:first-child {
+				padding-right: 15px;
+				flex: 0 0 200px;
+			}
+		}
+		&__item {
+			flex: 0 0 200px;
+		}
+	}
+	.item-similar {
+		&__link {
+			font-size: 9px;
+			padding-left: 7px;
+			padding-right: 7px;
+		}
+		&__price {
+			font-size: 14px;
+			display: flex;
+			span {
+				&::before {
+					width: 9px;
+					height: 9px;
+					right: 3px;
+				}
+			}
+		}
+		&__point {
+			width: 35px;
+			height: 35px;
+		}
+	}
 }
 
 @media (max-width: 575.98px) {
@@ -85,6 +121,25 @@
 			padding-left: 12px;
 			padding-bottom: 40px;
 			padding-right: 15px;
+		}
+	}
+	.similar{
+		&__column {
+			&:first-child {
+				display: none;
+			}
+		}
+		&__item {
+			flex: 0 0 200px;
+		}
+		&__scrollbar {
+			display: none;
+		}
+		&__body {
+			margin: 0px -7.5px;
+		}
+		&__item {
+			padding: 0px 7.5px;
 		}
 	}
 }
