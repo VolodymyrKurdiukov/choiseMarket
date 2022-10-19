@@ -58,6 +58,10 @@
 			width: 16.667%;
 		}
 	}
+	.product-tabs {
+		&__tab {
+		}
+	}
 }
 
 @media (max-width: 575.98px) {
@@ -70,8 +74,33 @@
 		}
 		&__sub-column {
 			flex: 1 1 100%;
-			&:first-child{
+			&:first-child {
 				margin-bottom: 20px;
+			}
+		}
+	}
+	.product-tabs {
+		&__wrapper {
+			padding-top: 30px;
+			padding-left: 12px;
+			padding-bottom: 40px;
+			padding-right: 15px;
+		}
+	}
+}
+@media (min-width: 767.98px) {
+	.product-tabs {
+		&__tabs {
+			> *:not(:last-child) {
+				margin-right: 0;
+			}
+		}
+		&__tab {
+			flex: 0 0 33.333%;
+			&.active {
+				&::before {
+					width: 92px;
+				}
 			}
 		}
 	}

@@ -680,6 +680,13 @@ $(document).ready(function () {
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
 
+	$(".product-tabs__item").not(":first").hide();
+	$(".product-tabs__wrapper .product-tabs__tab").click(function () {
+		$(".product-tabs__wrapper .product-tabs__tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".product-tabs__item").hide().eq($(this).index()).fadeIn();
+	}).eq(0).addClass("active");
+
+
 	if ($(window).width() < 991.98) {
 		$('.menu__link-arrow').click(function (event) {
 			$(this).toggleClass('active').next().slideToggle(300);

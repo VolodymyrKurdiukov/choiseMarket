@@ -238,9 +238,9 @@
 .quantity-product-card {
 	display: flex;
 	align-items: center;
-	>*:not(:last-child) {
-			@include adaptiv-value("margin-right", 30, 10, 1);
-		}
+	> *:not(:last-child) {
+		@include adaptiv-value("margin-right", 30, 10, 1);
+	}
 	// .quantity-product-card__label
 
 	&__label {
@@ -253,7 +253,7 @@
 		background-color: $colorTwentyOne;
 		cursor: pointer;
 		position: relative;
-		&::before{
+		&::before {
 			content: "";
 			position: absolute;
 			top: 50%;
@@ -261,7 +261,6 @@
 			transform: translate(-50%, -50%);
 			z-index: 1;
 		}
-		
 	}
 
 	// .quantity-product-card__button-minus
@@ -287,6 +286,93 @@
 			background: url("../img/icons/plus.svg") 0 0 / cover no-repeat;
 			width: 12px;
 			height: 23px;
+		}
+	}
+}
+//========================================================================================================================================================
+
+.product-tabs {
+	@include adaptiv-value("margin-bottom", 80, 50, 1);
+	// .product-tabs__container
+
+	&__container {
+	}
+
+	// .product-tabs__wrapper
+
+	&__wrapper {
+		background-color: #fff;
+		border-radius: 5px;
+		padding-top: 40px;
+		padding-right: 45px;
+		padding-bottom: 60px;
+		padding-left: 45px;
+	}
+
+	// .product-tabs__tabs
+
+	&__tabs {
+		display: flex;
+		align-items: center;
+		@include adaptiv-value("margin-bottom", 65, 30, 1);
+		position: relative;
+		> *:not(:last-child) {
+			@include adaptiv-value("margin-right", 300, 17, 1);
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: -14px;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: #dadada;
+		}
+	}
+
+	// .product-tabs__tab
+
+	&__tab {
+		color: $colorOne;
+		@include adaptiv-value("font-size", 16, 14, 1);
+		text-transform: uppercase;
+		position: relative;
+		cursor: pointer;
+		&.active {
+			&::before {
+				content: "";
+				position: absolute;
+				bottom: -15px;
+				left: 0;
+				width: 100%;
+				height: 4px;
+				background-color: $colorTwelve;
+			}
+		}
+	}
+
+	// .product-tabs__content
+
+	&__content {
+	}
+
+	// .product-tabs__item
+
+	&__item {
+		> *:not(:last-child) {
+			@include adaptiv-value("margin-bottom", 30, 10, 1);
+		}
+		p {
+			color: $colorOne;
+			line-height: 160%;
+			span {
+				font-weight: 700;
+			}
+		}
+		h2 {
+			color: $colorOne;
+			@include adaptiv-value("font-size", 20, 16, 1);
+			font-weight: 500;
 		}
 	}
 }
