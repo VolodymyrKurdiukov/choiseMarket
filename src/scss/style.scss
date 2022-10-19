@@ -95,6 +95,9 @@ body.lock {
 
 	&__weight {
 	}
+
+	&__product-card {
+	}
 }
 @import "blocks/header";
 @import "blocks/main";
@@ -109,6 +112,7 @@ body.lock {
 @import "blocks/contacts";
 @import "blocks/programs";
 @import "blocks/weight";
+@import "blocks/productCard";
 @import "blocks/footer";
 
 @import "media/header_media";

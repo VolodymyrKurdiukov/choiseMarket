@@ -291,6 +291,26 @@ if (businessSlider.length > 0) {
 	});
 };
 
+
+let productCardSlider = document.querySelectorAll('.product-card__sliders');
+if (productCardSlider.length > 0) {
+	let productCardSubSlider = new Swiper(".sub-slider-product-card", {
+		wrapperClass: "slider-product-card__body",
+		slideClass: "slider-product-card__item",
+		spaceBetween: 10,
+		slidesPerView: 4,
+		freeMode: true,
+		watchSlidesProgress: true,
+	});
+	let productCardMainSlider = new Swiper(".main-slider-product-card", {
+		wrapperClass: "slider-product-card__body",
+		slideClass: "slider-product-card__item",
+		spaceBetween: 10,
+		thumbs: {
+			swiper: productCardSubSlider,
+		},
+	});
+};
 //========================================================================================================================================================
 
 let news = document.querySelectorAll('.news');
