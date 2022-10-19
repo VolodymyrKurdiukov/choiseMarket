@@ -301,6 +301,20 @@ if (productCardSlider.length > 0) {
 		slidesPerView: 4,
 		freeMode: true,
 		watchSlidesProgress: true,
+		breakpoints: {
+			320.98: {
+				slidesPerView: 5,
+			},
+			575.98: {
+				slidesPerView: 6,
+			},
+			767.98: {
+				slidesPerView: 3,
+			},
+			991.98: {
+				slidesPerView: 4,
+			},
+		}
 	});
 	let productCardMainSlider = new Swiper(".main-slider-product-card", {
 		wrapperClass: "slider-product-card__body",
@@ -627,6 +641,27 @@ if (selecton.length > 0) {
 		}
 	}
 };
+
+//========================================================================================================================================================
+
+let quantityButtons = document.querySelectorAll('.quantity-product-card__button');
+if (quantityButtons.length > 0) {
+	for (let index = 0; index < quantityButtons.length; index++) {
+		const quantityButton = quantityButtons[index];
+		quantityButton.addEventListener("click", function (e) {
+			let value = parseInt(quantityButton.closest('.quantity-product-card').querySelector('input').value);
+			if (quantityButton.classList.contains('quantity-product-card__button-plus')) {
+				value++;
+			} else {
+				value = value - 1;
+				if (value < 1) {
+					value = 1
+				}
+			}
+			quantityButton.closest('.quantity-product-card').querySelector('input').value = value;
+		});
+	}
+}
 
 //========================================================================================================================================================
 
