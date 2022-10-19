@@ -197,10 +197,12 @@ if (brandsSlider.length > 0) {
 		breakpoints: {
 			320: {
 				centeredSlides: false,
-				spaceBetween: 15,
 				allowTouchMove: true,
 			},
-			575: {
+			575.98: {
+				centeredSlides: true,
+			},
+			1199.98: {
 				centeredSlides: true,
 				allowTouchMove: false,
 			},
