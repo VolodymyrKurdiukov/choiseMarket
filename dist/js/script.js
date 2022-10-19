@@ -347,6 +347,33 @@ if (similarSlider.length > 0) {
 	});
 };
 
+let testimonialsSlider = document.querySelectorAll('.testimonials__wrapper');
+if (testimonialsSlider.length > 0) {
+	let testimonialsSlider = new Swiper('.testimonials__wrapper', {
+		wrapperClass: "testimonials__body",
+		slideClass: "testimonials__item",
+		direction: 'vertical',
+		slidesPerView: 'auto',
+		speed: 500,
+		mousewheel: {
+			sensitivity: 1,
+		},
+		watchOverFlow: true,
+		observer: true,
+		observeParents: true,
+		observeSlideChildren: true,
+		scrollbar: {
+			el: '.testimonials__scroll',
+			dragClass: "testimonials__drag-scroll",
+			draggable: true,
+			dragSize: 40,
+		},
+		navigation: {
+			nextEl: ".testimonials__rounded",
+		},
+	});
+};
+
 //========================================================================================================================================================
 
 let news = document.querySelectorAll('.news');
