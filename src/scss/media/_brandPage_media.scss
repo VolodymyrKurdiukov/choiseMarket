@@ -1,0 +1,46 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 767.98px) {
+	.item-tabs-brand-page {
+		&__row {
+			margin: 0px -7px;
+		}
+		&__column {
+			flex: 0 0 33.333%;
+			padding: 0px 7px;
+		}
+		&__filter{
+			.form-filter__item{
+				margin-bottom: 0;
+			}
+		}
+	}
+	.tabs-brand-page{
+		&__tabs{
+			flex-wrap: wrap;
+		}
+		&__tab{
+			flex: 0 0 50%;
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.item-tabs-brand-page {
+		&__column {
+			flex: 0 0 50%;
+		}
+	}
+}
+@media (max-width: 400.98px){
+	.tabs-brand-page{
+		&__tab{
+			flex: 1 1 100%;
+		}
+	}
+}

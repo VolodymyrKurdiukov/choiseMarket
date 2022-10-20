@@ -104,6 +104,11 @@ body.lock {
 	}
 	&__testimonials {
 	}
+
+	&__brand-page {
+	}
+	&__brand-page-tabs {
+	}
 }
 @import "blocks/header";
 @import "blocks/main";
@@ -119,6 +124,7 @@ body.lock {
 @import "blocks/programs";
 @import "blocks/weight";
 @import "blocks/productCard";
+@import "blocks/brandPage";
 @import "blocks/footer";
 
 @import "media/header_media";
@@ -135,4 +141,5 @@ body.lock {
 @import "media/programs_media";
 @import "media/weight_media";
 @import "media/productCard_media";
+@import "media/brandPage_media";
 @import "media/footer_media";

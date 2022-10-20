@@ -750,6 +750,12 @@ $(document).ready(function () {
 		}
 	});
 
+	$(".tabs-brand-page__item").not(":first").hide();
+	$(".tabs-brand-page__wrapper .tabs-brand-page__tab").click(function () {
+		$(".tabs-brand-page__wrapper .tabs-brand-page__tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".tabs-brand-page__item").hide().eq($(this).index()).fadeIn();
+	}).eq(0).addClass("active");
+
 	if ($(window).width() < 991.98) {
 		$('.menu__link-arrow').click(function (event) {
 			$(this).toggleClass('active').next().slideToggle(300);
