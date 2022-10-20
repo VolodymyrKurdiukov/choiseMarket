@@ -277,6 +277,11 @@
 
 	&__input {
 		width: 15px;
+		color: $colorOne;
+		@include adaptiv-value("font-size", 16, 14, 1);
+		input{
+			width: 100%;
+		}
 	}
 
 	// .quantity-product-card__button-plus
@@ -653,10 +658,12 @@
 		font-weight: 500;
 		margin-bottom: 5px;
 	}
-	p {
+	&__text {
 		color: $colorEleven;
-		line-height: 130%;
-		margin-bottom: 5px;
+		line-height: 140%;
+		&-more {
+			display: none;
+		}
 	}
 	// .item-testimonials__more
 

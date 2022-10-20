@@ -735,6 +735,20 @@ $(document).ready(function () {
 		$(".product-tabs__item").hide().eq($(this).index()).fadeIn();
 	}).eq(0).addClass("active");
 
+	$('.item-testimonials__more').click(function (event) {
+		$(this).toggleClass('active').prev().slideToggle(300);
+	});
+
+	$('.item-testimonials__more').click(function () {
+		if ($(this).attr('data-show') === "true") {
+			$(this).html("Скрыть");
+			$(this).attr('data-show', "false");
+		}
+		else {
+			$(this).html("Cмотреть весь");
+			$(this).attr('data-show', "true");
+		}
+	});
 
 	if ($(window).width() < 991.98) {
 		$('.menu__link-arrow').click(function (event) {
