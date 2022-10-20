@@ -398,6 +398,7 @@
 	}
 }
 .form-item-authorization {
+	display: none;
 	@include adaptiv-value("margin-top", 45, 20, 1);
 	// .form-item-authorization__title
 

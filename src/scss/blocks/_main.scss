@@ -10,7 +10,9 @@
 
 	// .main__screen
 	&__screen {
-		
+		flex: 1 0 100%;
+		position: relative;
+		display: flex;
 	}
 
 	// .main__content
