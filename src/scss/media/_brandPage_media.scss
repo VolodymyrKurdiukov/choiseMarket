@@ -1,4 +1,15 @@
 @media (any-hover: hover) {
+	.sale {
+		&__button{
+			&:hover {
+				svg {
+					path {
+						fill: #9c9a8d;
+					}
+				}
+			}
+		}
+	}
 }
 @media (max-width: 1199.98px) {
 }
@@ -42,6 +53,31 @@
 	.item-tabs-brand-page {
 		&__column {
 			flex: 0 0 50%;
+		}
+	}
+	.other-brands {
+		&__scrollbar {
+			display: none;
+		}
+	}
+	.sale {
+		&__container {
+			padding: 0;
+		}
+		&__button {
+			width: 30px;
+			height: 30px;
+		}
+		&__button-prev {
+			transform: rotate(180deg) translate(0, 2%);
+		}
+		&__scrollbar {
+			width: 180px;
+		}
+	}
+	.item-sale {
+		&__bg {
+			border-radius: 0px;
 		}
 	}
 }

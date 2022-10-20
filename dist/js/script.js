@@ -395,6 +395,29 @@ if (otherBrandsSlider.length > 0) {
 	});
 };
 
+let saleSlider = document.querySelectorAll('.sale__wrapper');
+if (saleSlider.length > 0) {
+	let saleSlider = new Swiper('.sale__wrapper', {
+		wrapperClass: "sale__body",
+		slideClass: "sale__item",
+		slidesPerView: 1,
+		watchOverFlow: true,
+		observer: true,
+		observeParents: true,
+		observeSlideChildren: true,
+		speed: 1000,
+		centeredSlides: true,
+		navigation: {
+			nextEl: ".sale__button-next",
+			prevEl: ".sale__button-prev",
+		},
+		scrollbar: {
+			el: '.sale__scrollbar',
+			dragClass: "sale__drag-scroll"
+		}
+	});
+};
+
 //========================================================================================================================================================
 
 let news = document.querySelectorAll('.news');
