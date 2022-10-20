@@ -823,6 +823,10 @@ $(document).ready(function () {
 		$(".tabs-brand-page__item").hide().eq($(this).index()).fadeIn();
 	}).eq(0).addClass("active");
 
+	$('.item-authorization__label').click(function (event) {
+		$(this).toggleClass('active').next().slideToggle(300);
+	});
+
 	if ($(window).width() < 991.98) {
 		$('.menu__link-arrow').click(function (event) {
 			$(this).toggleClass('active').next().slideToggle(300);

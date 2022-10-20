@@ -24,11 +24,28 @@
 			}
 		}
 	}
+	.item-authorization{
+		padding: 15px;
+		&__label{
+			padding-left: 35px;
+			&::before{
+				left: 0;
+			}
+		}
+	}
+	.form-item-authorization{
+		&__item{
+			width: 100%;
+		}
+	}
 }
 @media (max-width: 360.98px) {
 	.cart{
 		&__container{
 			padding: 0;
 		}
+	}
+	.form-item-authorization__sub-button{
+		padding: 8px 15px;
 	}
 }
