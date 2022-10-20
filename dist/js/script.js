@@ -374,6 +374,27 @@ if (testimonialsSlider.length > 0) {
 	});
 };
 
+let otherBrandsSlider = document.querySelectorAll('.other-brands__wrapper');
+if (otherBrandsSlider.length > 0) {
+	let otherBrandsSlider = new Swiper('.other-brands__wrapper', {
+		wrapperClass: "other-brands__body",
+		slideClass: "other-brands__item",
+		slidesPerView: 'auto',
+		watchOverFlow: true,
+		observer: true,
+		observeParents: true,
+		observeSlideChildren: true,
+		speed: 1000,
+		loop: true,
+		scrollbar: {
+			el: '.other-brands__scrollbar',
+			dragClass: "other-brands__drag-scroll",
+			draggable: true,
+			dragSize: 100,
+		},
+	});
+};
+
 //========================================================================================================================================================
 
 let news = document.querySelectorAll('.news');

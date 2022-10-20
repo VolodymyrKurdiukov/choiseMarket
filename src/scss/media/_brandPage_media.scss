@@ -14,18 +14,26 @@
 			flex: 0 0 33.333%;
 			padding: 0px 7px;
 		}
-		&__filter{
-			.form-filter__item{
+		&__filter {
+			.form-filter__item {
 				margin-bottom: 0;
 			}
 		}
 	}
-	.tabs-brand-page{
-		&__tabs{
+	.tabs-brand-page {
+		&__tabs {
 			flex-wrap: wrap;
 		}
-		&__tab{
+		&__tab {
 			flex: 0 0 50%;
+		}
+	}
+	.other-brands {
+		&__body {
+			margin: 0px -7px;
+		}
+		&__item {
+			padding: 0px 7px;
 		}
 	}
 }
@@ -37,10 +45,15 @@
 		}
 	}
 }
-@media (max-width: 400.98px){
-	.tabs-brand-page{
-		&__tab{
+@media (max-width: 400.98px) {
+	.tabs-brand-page {
+		&__tab {
 			flex: 1 1 100%;
+		}
+	}
+	.other-brands {
+		&__item {
+			flex: 0 0 50%;
 		}
 	}
 }
