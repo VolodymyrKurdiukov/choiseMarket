@@ -113,6 +113,9 @@ body.lock {
 	}
 	&__sale {
 	}
+
+	&__cart {
+	}
 }
 @import "blocks/header";
 @import "blocks/main";
@@ -129,6 +132,7 @@ body.lock {
 @import "blocks/weight";
 @import "blocks/productCard";
 @import "blocks/brandPage";
+@import "blocks/cart";
 @import "blocks/footer";
 
 @import "media/header_media";
@@ -146,4 +150,5 @@ body.lock {
 @import "media/weight_media";
 @import "media/productCard_media";
 @import "media/brandPage_media";
+@import "media/cart_media";
 @import "media/footer_media";

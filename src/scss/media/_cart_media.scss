@@ -1,0 +1,34 @@
+@media (any-hover: hover) {
+}
+@media (max-width: 1199.98px) {
+}
+@media (max-width: 991.98px) {
+	.cart {
+		&__scroll {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+	.cart {
+		&__unit {
+			&-desctop {
+				display: none;
+			}
+			&-mobile{
+				display: block;
+			}
+		}
+	}
+}
+@media (max-width: 360.98px) {
+	.cart{
+		&__container{
+			padding: 0;
+		}
+	}
+}
