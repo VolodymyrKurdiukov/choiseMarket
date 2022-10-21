@@ -379,7 +379,7 @@
 			position: absolute;
 			top: 50%;
 			left: -35px;
-			transform: translate(0, -50%) rotate(180deg);
+			transform: translate(0, -50%) rotate(0deg);
 			width: 14px;
 			height: 14px;
 			background: url("../img/icons/arrow-down.svg") 0 0 / cover no-repeat;
@@ -387,7 +387,7 @@
 		}
 		&.active {
 			&::before {
-				transform: translate(0, -50%) rotate(0deg);
+				transform: translate(0, -50%) rotate(180deg);
 			}
 		}
 	}
@@ -433,7 +433,7 @@
 				width: 16px;
 				height: 15px;
 				left: 12px;
-				background: url("../img/icons/user-icon.svg") 0 0 / cover no-repeat;
+				background: url("../img/icons/user-icon-small.svg") 0 0 / cover no-repeat;
 			}
 		}
 		&-password {

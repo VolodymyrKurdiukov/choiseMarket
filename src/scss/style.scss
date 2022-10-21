@@ -118,6 +118,9 @@ body.lock {
 	}
 	&__authorization {
 	}
+
+			&__ordering {
+		}
 }
 @import "blocks/header";
 @import "blocks/main";
@@ -135,6 +138,7 @@ body.lock {
 @import "blocks/productCard";
 @import "blocks/brandPage";
 @import "blocks/cart";
+@import "blocks/ordering";
 @import "blocks/footer";
 
 @import "media/header_media";
@@ -153,4 +157,5 @@ body.lock {
 @import "media/productCard_media";
 @import "media/brandPage_media";
 @import "media/cart_media";
+@import "media/ordering_media";
 @import "media/footer_media";

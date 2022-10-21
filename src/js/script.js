@@ -827,6 +827,18 @@ $(document).ready(function () {
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
 
+	$('.delivery-ordering__item-curier').click(function (event) {
+		$(this).addClass('active');
+		$('.delivery-ordering__address-wrapper-curier').addClass('active');
+		$('.delivery-ordering__address-wrapper-delivery').removeClass('active');
+	});
+
+	$('.delivery-ordering__item').not('.delivery-ordering__item-curier').click(function (event) {
+		$(this).addClass('active');
+		$('.delivery-ordering__address-wrapper-curier').removeClass('active');
+		$('.delivery-ordering__address-wrapper-delivery').addClass('active');
+	});
+
 	if ($(window).width() < 991.98) {
 		$('.menu__link-arrow').click(function (event) {
 			$(this).toggleClass('active').next().slideToggle(300);
