@@ -28,7 +28,7 @@
 
 <body>
 	<div class="wrapper">
-		<main class="page">
+		<main class="page ">
 			<header class="header">
 				<div class="header__top top-header">
 					<div class="top-header__container container">
@@ -187,7 +187,7 @@
 									</g>
 								</svg></a>
 						</div>
-						<a href="#" class="shopper-ordering__reward btn btn-light">МОЯ ВЫГОДА</a>
+						<a href="#popupReward" class="popup-link shopper-ordering__reward btn btn-light">МОЯ ВЫГОДА</a>
 					</div>
 					<div class="ordering__row">
 						<div class="ordering__column">
@@ -248,7 +248,8 @@
 								</div>
 								<div class="delivery-ordering__label delivery-ordering__label-address"><span>4</span>АДРЕС
 									ДОСТАВКИ</div>
-								<div class="delivery-ordering__address-wrapper delivery-ordering__address-wrapper-delivery active">
+								<div
+									class="delivery-ordering__address-wrapper delivery-ordering__address-wrapper-delivery active">
 									<div class="delivery-ordering__item">
 										<label for="deliveryCity" class="delivery-ordering__label-label">Город</label>
 										<input placeholder="Ваш город" required id="deliveryCity" name="deliveryCity" type="text"
@@ -268,30 +269,30 @@
 								<div class="delivery-ordering__address-wrapper delivery-ordering__address-wrapper-curier">
 									<div class="delivery-ordering__item">
 										<label for="deliveryCityCurier" class="delivery-ordering__label-label">Город</label>
-										<input placeholder="Ваш город" required id="deliveryCityCurier" name="deliveryCityCurier" type="text"
-											class="delivery-ordering__input">
+										<input placeholder="Ваш город" required id="deliveryCityCurier" name="deliveryCityCurier"
+											type="text" class="delivery-ordering__input">
 									</div>
 									<div class="delivery-ordering__item">
 										<label for="deliveryChoose" class="delivery-ordering__label-label">Служба доставки</label>
-										<input placeholder="Выберите службу" required id="deliveryChoose" name="deliveryChoose" type="text"
-											class="delivery-ordering__input">
+										<input placeholder="Выберите службу" required id="deliveryChoose" name="deliveryChoose"
+											type="text" class="delivery-ordering__input">
 									</div>
 									<div class="delivery-ordering__item">
 										<label for="deliveryAddressCurier" class="delivery-ordering__label-label">Адрес</label>
-										<input placeholder="Ваш адрес" required id="deliveryAddressCurier" name="deliveryAddressCurier" type="text"
-											class="delivery-ordering__input">
+										<input placeholder="Ваш адрес" required id="deliveryAddressCurier"
+											name="deliveryAddressCurier" type="text" class="delivery-ordering__input">
 									</div>
 									<div class="delivery-ordering__row">
 										<div class="delivery-ordering__column">
 											<div class="delivery-ordering__item">
-												<input placeholder="Дом" required id="deliveryHouse" name="deliveryHouse" type="text"
-													class="delivery-ordering__input">
+												<input placeholder="Дом" required id="deliveryHouse" name="deliveryHouse"
+													type="text" class="delivery-ordering__input">
 											</div>
 										</div>
 										<div class="delivery-ordering__column">
 											<div class="delivery-ordering__item">
-												<input placeholder="Квартира" required id="deliveryApp" name="deliveryApp" type="text"
-													class="delivery-ordering__input">
+												<input placeholder="Квартира" required id="deliveryApp" name="deliveryApp"
+													type="text" class="delivery-ordering__input">
 											</div>
 										</div>
 									</div>
@@ -553,7 +554,50 @@
 			<div class="footer__policy">Choice © 2004-2021. Торговая марка компании Сhoice</div>
 		</footer>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<div id="popupReward" class="popup popup-reward">
+		<div class="popup-reward__body">
+			<div class="popup-reward__content">
+				<a href="#" class="popup-reward__close close-popup"><img src="img/icons/close-popup.svg" alt="close-popup"></a>
+				<div class="popup-reward__title">Моя выгода</div>
+				<div class="popup-reward__label">Плюсы</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices et integer velit pharetra. Posuere
+					nec, molestie
+					in integer. Sed sed praesent leo aliquam maecenas. Commodo ipsum ultrices viverra auctor eu dolor duis
+					at. Tempor,
+					pharetra ultricies posuere cras. Eros ornare a a cursus sed enim eu elementum. Tristique posuere lobortis
+					purus
+					adipiscing.
+				</p>
+				<p>Dui eu facilisis ut vitae porttitor non viverra. Nulla ut duis condimentum tincidunt ut arcu scelerisque
+					pharetra.
+					Libero semper sed leo varius. Sed donec dui eu aliquam sed. Vulputate at amet egestas quam morbi
+					elementum sapien mauris
+					odio. Sit tellus ultricies libero auctor tortor enim, congue bibendum. Ultrices diam faucibus massa
+					tincidunt nunc
+					proin. Mollis est, eu sodales in in quis arcu. Tortor felis, eget auctor odio mauris, nulla senectus
+					libero odio. Lectus
+					curabitur arcu sit aliquam egestas amet dapibus a.</p>
+				<div class="popup-reward__label">Информация про Баллы</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices et integer velit pharetra. Posuere
+					nec, molestie
+					in integer. Sed sed praesent leo aliquam maecenas. Commodo ipsum ultrices viverra auctor eu dolor duis
+					at. Tempor,
+					pharetra ultricies posuere cras. Eros ornare a a cursus sed enim eu elementum. Tristique posuere lobortis
+					purus
+					adipiscing.
+				</p>
+				<p>Dui eu facilisis ut vitae porttitor non viverra. Nulla ut duis condimentum tincidunt ut arcu scelerisque
+					pharetra.
+					Libero semper sed leo varius. Sed donec dui eu aliquam sed. Vulputate at amet egestas quam morbi
+					elementum sapien mauris
+					odio. Sit tellus ultricies libero auctor tortor enim, congue bibendum. Ultrices diam faucibus massa
+					tincidunt nunc
+					proin. Mollis est, eu sodales in in quis arcu. Tortor felis, eget auctor odio mauris, nulla senectus
+					libero odio. Lectus
+					curabitur arcu sit aliquam egestas amet dapibus a.</p>
+			</div>
+		</div>
+	</div>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
