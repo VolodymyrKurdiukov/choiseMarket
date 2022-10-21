@@ -12,7 +12,7 @@
 	overflow-y: auto;
 	overflow-x: hidden;
 	transition: all 0.3s ease;
-	&.open{
+	&.open {
 		opacity: 1;
 		visibility: visible;
 		pointer-events: all;
@@ -76,5 +76,55 @@
 		line-height: 144%;
 		text-align: left;
 		@include adaptiv-value("margin-bottom", 30, 15, 1);
+	}
+}
+.popup-submit {
+	// .popup-submit__body
+
+	&__body {
+		min-height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 30px 10px;
+	}
+
+	// .popup-submit__content
+
+	&__content {
+		@include adaptiv-value("padding-top", 100, 50, 1);
+		@include adaptiv-value("padding-right", 140, 30, 1);
+		@include adaptiv-value("padding-bottom", 100, 30, 1);
+		@include adaptiv-value("padding-left", 140, 30, 1);
+		box-shadow: 2px 10px 25px rgba(51, 51, 51, 0.3);
+		border-radius: 5px;
+		background-color: #ffffff;
+		max-width: 590px;
+		position: relative;
+	}
+
+	// .popup-submit__close
+
+	&__close {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	// .popup-submit__btn
+
+	&__btn {
+		width: 250px;
+		text-align: center;
+		padding: 5px 0px;
+	}
+	&__divider {
+		color: $colorEleven;
+		text-align: center;
+		@include adaptiv-value("margin-top", 20, 8, 1);
+		@include adaptiv-value("margin-bottom", 20, 8, 1);
 	}
 }

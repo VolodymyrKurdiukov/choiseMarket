@@ -49,6 +49,9 @@
 	&-light{
 		background-color: $colorTwelve;
 	}
+	&-dark {
+			background-color: $colorFourteen;
+		}
 	@media (any-hover: hover) {
 		&:hover {
 			background-color: $colorSix;
