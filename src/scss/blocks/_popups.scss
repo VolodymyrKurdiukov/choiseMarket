@@ -18,6 +18,8 @@
 		pointer-events: all;
 	}
 }
+//========================================================================================================================================================
+
 .popup-reward {
 	// .popup-reward__body
 
@@ -78,6 +80,8 @@
 		@include adaptiv-value("margin-bottom", 30, 15, 1);
 	}
 }
+//========================================================================================================================================================
+
 .popup-submit {
 	// .popup-submit__body
 
@@ -126,5 +130,142 @@
 		text-align: center;
 		@include adaptiv-value("margin-top", 20, 8, 1);
 		@include adaptiv-value("margin-bottom", 20, 8, 1);
+	}
+}
+.popup-authorization {
+	// .popup-authorization__body
+
+	&__body {
+		min-height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 30px 10px;
+	}
+
+	// .popup-authorization__content
+
+	&__content {
+		@include adaptiv-value("padding-top", 50, 20, 1);
+		@include adaptiv-value("padding-right", 60, 20, 1);
+		@include adaptiv-value("padding-bottom", 70, 20, 1);
+		@include adaptiv-value("padding-left", 60, 20, 1);
+		box-shadow: 2px 10px 25px rgba(51, 51, 51, 0.3);
+		border-radius: 5px;
+		background-color: #ffffff;
+		max-width: 590px;
+		position: relative;
+	}
+
+	// .popup-authorization__close
+
+	&__close {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	// .popup-authorization__form
+
+	&__form {
+	}
+
+	// .popup-authorization__row
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include adaptiv-value("margin-top", 35, 20, 1);
+		@include adaptiv-value("margin-bottom", 30, 20, 1);
+	}
+
+	// .popup-authorization__column
+
+	&__column {
+	}
+
+	// .popup-authorization__item
+
+	&__item {
+	}
+
+	// .popup-authorization__checkbox
+
+	&__checkbox {
+		display: none;
+		&:checked + .popup-authorization__checkbox-label::after {
+			transform: scale(1);
+		}
+	}
+
+	// .popup-authorization__checkbox-label
+
+	&__checkbox-label {
+		color: $colorEleven;
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		cursor: pointer;
+		line-height: 120%;
+		a {
+			text-decoration: underline;
+			color: $colorFour;
+			display: inline-block;
+			margin: 0px 5px;
+		}
+		&::before {
+			content: "";
+			flex: 0 0 16px;
+			width: 16px;
+			height: 16px;
+			background-color: #fff;
+			border: 1px solid $colorTwelve;
+			border-radius: 2px;
+			align-self: flex-start;
+			margin-right: 10px;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			width: 12px;
+			height: 12px;
+			top: 2px;
+			left: 2px;
+			background: url("../img/icons/checkbox.svg") 0 0 / cover no-repeat;
+			z-index: 1;
+			transform: scale(0);
+			transition: all 0.3s ease;
+		}
+	}
+
+	// .popup-authorization__link
+
+	&__link {
+		color: $colorOne;
+		font-weight: 500;
+	}
+
+	// .popup-authorization__question
+
+	&__question {
+		color: $colorOne;
+		@include adaptiv-value("font-size", 16, 14, 1);
+		text-align: center;
+		@include adaptiv-value("padding-top", 35, 20, 1);
+		border-top: 1px solid $colorThirteen;
+		@include adaptiv-value("margin-bottom", 25, 20, 1);
+	}
+
+	// .popup-authorization__registration
+
+	&__registration {
+		color: $colorTwelve;
+		text-decoration: underline;
+		text-align: center;
+		display: block;
 	}
 }
