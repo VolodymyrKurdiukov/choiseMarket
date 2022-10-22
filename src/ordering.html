@@ -620,11 +620,11 @@
 				<div class="form-item-authorization__title">Авторизация</div>
 				<form action="#" class="popup-authorization__form">
 					<div class=" form-item-authorization__item form-item-authorization__item-login">
-						<input placeholder="Логин" required type="text" id="popupAuthorizationLogin"
+						<input placeholder="Логин" type="email" id="popupAuthorizationLogin"
 							name="popupAuthorizationLogin" class="form-item-authorization__input">
 					</div>
 					<div class="form-item-authorization__item form-item-authorization__item-password">
-						<input placeholder="Пароль" required type="password" id="popupAuthorizationPassword"
+						<input placeholder="Пароль" type="password" id="popupAuthorizationPassword"
 							name="popupAuthorizationPassword" class="form-item-authorization__input">
 					</div>
 					<button type="submit" class="form-item-authorization__button btn">АВТОРИЗОВАТЬСЯ</button>
@@ -658,8 +658,8 @@
 				<form action="#" class="popup-reset__form">
 					<div class="popup-reset__item">
 						<label for="popupResetEmail" class="popup-reset__label">Введите ваш Email</label>
-						<input placeholder="Ivanov23@gmail.com" required id="popupResetEmail" name="popupResetEmail" type="email"
-							class="popup-reset__input">
+						<input placeholder="Ivanov23@gmail.com" required id="popupResetEmail" name="popupResetEmail"
+							type="email" class="popup-reset__input">
 					</div>
 					<button type="submit" class="popup-reset__btn btn">ОТПРАВИТЬ СБРОС НА EMAIL</button>
 				</form>
@@ -674,13 +674,14 @@
 				<div class="popup-registration__title">
 					Регистрация
 				</div>
-				<form action="#" class="popup-registration__form">
+				<form action="#" class="popup-registration__form popup-registration__form-validate">
 					<div class="popup-registration__item">
 						<label for="popupRegistrationTel" class="popup-registration__label">Введите ваш телефон</label>
-						<input placeholder="Телефон" required id="popupRegistrationTel" name="popupRegistrationTel" type="tel"
+						<input placeholder="Телефон" id="popupRegistrationTel" name="popupRegistrationTel" type="number"
 							class="popup-registration__input">
 					</div>
-					<button href="#popupRegistrationTelPhone" type="submit" class="popup-link popup-registration__btn btn">ПРОДОЛЖИТЬ</button>
+					<button href="#popupRegistrationTelPhone" type="submit"
+						class="popup-link popup-registration__btn btn">ПРОДОЛЖИТЬ</button>
 				</form>
 				<div class="popup-registration__question">Уже зарегистрированы на сайте?</div>
 				<a href="#popupAuthorization" class="popup-link popup-registration__link">Авторизоваться</a>
@@ -698,8 +699,8 @@
 				<form action="#" class="popup-registration__form">
 					<div class="popup-registration__item popup-registration__item-sms">
 						<label for="popupRegistrationTelSms" class="popup-registration__label">Введите ваш код</label>
-						<input placeholder="Код из СМС" required id="popupRegistrationTelSms" name="popupRegistrationTelSms" type="tel"
-							class="popup-registration__input popup-registration__input-sms">
+						<input placeholder="Код из СМС" required id="popupRegistrationTelSms" name="popupRegistrationTelSms"
+							type="tel" class="popup-registration__input popup-registration__input-sms">
 					</div>
 					<button type="submit" class="popup-registration__btn btn">ПОДТВЕРДИТЬ</button>
 				</form>
@@ -708,7 +709,9 @@
 			</div>
 		</div>
 	</div>
+	
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 

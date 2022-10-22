@@ -123,6 +123,8 @@
 		@include adaptiv-value("margin-bottom", 20, 8, 1);
 	}
 }
+//========================================================================================================================================================
+
 .popup-authorization {
 	// .popup-authorization__body
 
@@ -167,6 +169,7 @@
 	// .popup-authorization__item
 
 	&__item {
+
 	}
 
 	// .popup-authorization__checkbox
@@ -372,9 +375,8 @@
 		&::before {
 			content: "";
 			position: absolute;
-			top: 50%;
+			top: 40px;
 			left: 0;
-			transform: translate(0, 35%);
 			width: 14px;
 			height: 14px;
 			left: 12px;
@@ -384,6 +386,9 @@
 			&::before {
 				display: none;
 			}
+		}
+		label.error{
+			color:red;
 		}
 	}
 
@@ -399,6 +404,9 @@
 		@extend .popup-reset__input;
 		&-sms {
 			padding: 15px 20px;
+		}
+		&.error{
+			border:1px solid red;
 		}
 	}
 

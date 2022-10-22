@@ -29,7 +29,7 @@
 <body>
 	<div class="wrapper">
 		<main class="page">
-			<header class="header">
+			<header class="header lock-padding">
 				<div class="header__top top-header">
 					<div class="top-header__container container">
 						<div class="top-header__row">
@@ -52,8 +52,8 @@
 								<div class="top-header__actions actions-top-header">
 									<ul class="actions-top-header__list">
 										<li class="actions-top-header__item">
-											<a href="#" class="actions-top-header__user"><img src="img/icons/user-icon.svg"
-													alt="user-icon"></a>
+											<a href="#popupAuthorization" class="actions-top-header__user popup-link"><img
+													src="img/icons/user-icon.svg" alt="user-icon"></a>
 										</li>
 										<li class="actions-top-header__item">
 											<a href="#" class="actions-top-header__cart"><img src="img/icons/shopping-bag.svg"
@@ -71,7 +71,7 @@
 											</ul>
 										</li>
 									</ul>
-
+			
 								</div>
 							</div>
 						</div>
@@ -129,7 +129,8 @@
 										<a href="#" class="menu__link">ПРОГРАММЫ</a>
 									</li>
 								</ul>
-								<button class="menu__btn btn btn-menugreen">Вход в кабинет</button>
+								<button href="#popupAuthorization" class="menu__btn btn btn-menugreen popup-link">Вход в
+									кабинет</button>
 								<button class="menu__btn btn btn-menugray">КОРЗИНА</button>
 								<div class="menu__langs lang-menu">
 									<div class="lang-menu__label">Язык</div>
@@ -1166,8 +1167,106 @@
 			</footer>
 		</main>
 	</div>
+		<div id="popupAuthorization" class="popup popup-authorization">
+			<div class="popup__body popup-authorization__body">
+				<div class="popup__content popup-authorization__content">
+					<a href="#" class="popup__close popup-authorization__close close-popup"><img src="img/icons/close-popup.svg"
+							alt="close-popup"></a>
+					<div class="form-item-authorization__title">Авторизация</div>
+					<form action="#" class="popup-authorization__form">
+						<div class=" form-item-authorization__item form-item-authorization__item-login">
+							<input placeholder="Логин" type="email" id="popupAuthorizationLogin" name="popupAuthorizationLogin"
+								class="form-item-authorization__input">
+						</div>
+						<div class="form-item-authorization__item form-item-authorization__item-password">
+							<input placeholder="Пароль" type="password" id="popupAuthorizationPassword"
+								name="popupAuthorizationPassword" class="form-item-authorization__input">
+						</div>
+						<button type="submit" class="form-item-authorization__button btn">АВТОРИЗОВАТЬСЯ</button>
+						<div class="popup-authorization__row">
+							<div class="popup-authorization__column">
+								<div class="popup-authorization__item">
+									<input type="checkbox" checked id="popupAuthorizationRemember" name="popupAuthorizationRemember"
+										class="popup-authorization__checkbox">
+									<label for="popupAuthorizationRemember" class="popup-authorization__checkbox-label">
+										Запомнить меня</label>
+								</div>
+							</div>
+							<div class="popup-authorization__column">
+								<a href="#popupReset" class="popup-link popup-authorization__link">Забыли пароль?</a>
+							</div>
+						</div>
+					</form>
+					<div class="popup-authorization__question">Ещё не зарегистрированы на сайте?</div>
+					<a href="#popupRegistration" class="popup-link popup-authorization__registration">Зарегистрироваться</a>
+				</div>
+			</div>
+		</div>
+		<div id="popupReset" class="popup popup-reset">
+			<div class="popup__body popup-reset__body">
+				<div class="popup__content popup-reset__content">
+					<a href="#" class="popup__close popup-reset__close close-popup"><img src="img/icons/close-popup.svg"
+							alt="close-popup"></a>
+					<div class="popup-reset__title">
+						Сбросить пароль
+					</div>
+					<form action="#" class="popup-reset__form">
+						<div class="popup-reset__item">
+							<label for="popupResetEmail" class="popup-reset__label">Введите ваш Email</label>
+							<input placeholder="Ivanov23@gmail.com" required id="popupResetEmail" name="popupResetEmail" type="email"
+								class="popup-reset__input">
+						</div>
+						<button type="submit" class="popup-reset__btn btn">ОТПРАВИТЬ СБРОС НА EMAIL</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="popupRegistration" class="popup popup-registration">
+			<div class="popup__body popup-registration__body">
+				<div class="popup__content popup-registration__content">
+					<a href="#" class="popup__close popup-registration__close close-popup"><img src="img/icons/close-popup.svg"
+							alt="close-popup"></a>
+					<div class="popup-registration__title">
+						Регистрация
+					</div>
+					<form action="#" class="popup-registration__form popup-registration__form-validate">
+						<div class="popup-registration__item">
+							<label for="popupRegistrationTel" class="popup-registration__label">Введите ваш телефон</label>
+							<input placeholder="Телефон" id="popupRegistrationTel" name="popupRegistrationTel" type="number"
+								class="popup-registration__input">
+						</div>
+						<button href="#popupRegistrationTelPhone" type="submit"
+							class="popup-link popup-registration__btn btn">ПРОДОЛЖИТЬ</button>
+					</form>
+					<div class="popup-registration__question">Уже зарегистрированы на сайте?</div>
+					<a href="#popupAuthorization" class="popup-link popup-registration__link">Авторизоваться</a>
+				</div>
+			</div>
+		</div>
+		<div id="popupRegistrationTelPhone" class="popup popup-registration">
+			<div class="popup__body popup-registration__body">
+				<div class="popup__content popup-registration__content">
+					<a href="#" class="popup__close popup-registration__close close-popup"><img src="img/icons/close-popup.svg"
+							alt="close-popup"></a>
+					<div class="popup-registration__title">
+						Регистрация
+					</div>
+					<form action="#" class="popup-registration__form">
+						<div class="popup-registration__item popup-registration__item-sms">
+							<label for="popupRegistrationTelSms" class="popup-registration__label">Введите ваш код</label>
+							<input placeholder="Код из СМС" required id="popupRegistrationTelSms" name="popupRegistrationTelSms"
+								type="tel" class="popup-registration__input popup-registration__input-sms">
+						</div>
+						<button type="submit" class="popup-registration__btn btn">ПОДТВЕРДИТЬ</button>
+					</form>
+					<div class="popup-registration__question">Уже зарегистрированы на сайте?</div>
+					<a href="#popupAuthorization" class="popup-link popup-registration__link">Авторизоваться</a>
+				</div>
+			</div>
+		</div>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 

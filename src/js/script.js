@@ -964,6 +964,37 @@ $(document).ready(function () {
 		$('.delivery-ordering__address-wrapper-delivery').addClass('active');
 	});
 
+	$('.popup-authorization__form').validate({
+		rules: {
+			popupAuthorizationLogin: {
+				required: true,
+				email: true
+			},
+			popupAuthorizationPassword: "required"
+		},
+		messages: {
+			popupAuthorizationLogin:{
+				required: "Введите логин",
+				email: "Такой логин не найден"
+			},
+			popupAuthorizationPassword: "Введите пароль"
+		},
+	});
+
+	$('.popup-registration__form-validate').validate({
+		rules: {
+			popupRegistrationTel: {
+				required: true,
+				number: true
+			}
+		},
+		messages: {
+			popupRegistrationTel: {
+				required: "Не корректный телефон"
+			}
+		},
+	});
+
 	if ($(window).width() < 991.98) {
 		$('.menu__link-arrow').click(function (event) {
 			$(this).toggleClass('active').next().slideToggle(300);
