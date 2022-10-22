@@ -52,8 +52,8 @@
 								<div class="top-header__actions actions-top-header">
 									<ul class="actions-top-header__list">
 										<li class="actions-top-header__item">
-											<a href="#popupAuthorization" class="actions-top-header__user popup-link"><img src="img/icons/user-icon.svg"
-													alt="user-icon"></a>
+											<a href="#popupAuthorization" class="actions-top-header__user popup-link"><img
+													src="img/icons/user-icon.svg" alt="user-icon"></a>
 										</li>
 										<li class="actions-top-header__item">
 											<a href="#" class="actions-top-header__cart"><img src="img/icons/shopping-bag.svg"
@@ -129,7 +129,8 @@
 										<a href="#" class="menu__link">ПРОГРАММЫ</a>
 									</li>
 								</ul>
-								<button href="#popupAuthorization" class="menu__btn btn btn-menugreen popup-link">Вход в кабинет</button>
+								<button href="#popupAuthorization" class="menu__btn btn btn-menugreen popup-link">Вход в
+									кабинет</button>
 								<button class="menu__btn btn btn-menugray">КОРЗИНА</button>
 								<div class="menu__langs lang-menu">
 									<div class="lang-menu__label">Язык</div>
@@ -558,7 +559,7 @@
 	<div id="popupReward" class="popup popup-reward">
 		<div class="popup__body popup-reward__body">
 			<div class="popup__content popup-reward__content">
-				<a href="#" class="popup-reward__close close-popup"><img src="img/icons/close-popup.svg"
+				<a href="#" class="popup__close popup-reward__close close-popup"><img src="img/icons/close-popup.svg"
 						alt="close-popup"></a>
 				<div class="popup-reward__title">Моя выгода</div>
 				<div class="popup-reward__label">Плюсы</div>
@@ -603,7 +604,7 @@
 	<div id="popupSubmit" class="popup popup-submit">
 		<div class="popup__body popup-submit__body">
 			<div class="popup__content popup-submit__content">
-				<a href="#" class="popup-submit__close close-popup"><img src="img/icons/close-popup.svg"
+				<a href="#" class="popup__close popup-submit__close close-popup"><img src="img/icons/close-popup.svg"
 						alt="close-popup"></a>
 				<a href="#" class="popup-submit__btn btn btn-dark">ПЕРЕЙТИ В ЛИЧНЫЙ КАБИНЕТ</a>
 				<div class="popup-submit__divider">Либо</div>
@@ -614,7 +615,7 @@
 	<div id="popupAuthorization" class="popup popup-authorization">
 		<div class="popup__body popup-authorization__body">
 			<div class="popup__content popup-authorization__content">
-				<a href="#" class="popup-authorization__close close-popup"><img src="img/icons/close-popup.svg"
+				<a href="#" class="popup__close popup-authorization__close close-popup"><img src="img/icons/close-popup.svg"
 						alt="close-popup"></a>
 				<div class="form-item-authorization__title">Авторизация</div>
 				<form action="#" class="popup-authorization__form">
@@ -630,18 +631,38 @@
 					<div class="popup-authorization__row">
 						<div class="popup-authorization__column">
 							<div class="popup-authorization__item">
-								<input type="checkbox" checked id="popupAuthorizationRemember" name="popupAuthorizationRemember" class="popup-authorization__checkbox">
+								<input type="checkbox" checked id="popupAuthorizationRemember" name="popupAuthorizationRemember"
+									class="popup-authorization__checkbox">
 								<label for="popupAuthorizationRemember" class="popup-authorization__checkbox-label">
 									Запомнить меня</label>
 							</div>
 						</div>
 						<div class="popup-authorization__column">
-							<a href="#" class="popup-authorization__link">Забыли пароль?</a>
+							<a href="#popupReset" class="popup-link popup-authorization__link">Забыли пароль?</a>
 						</div>
 					</div>
 				</form>
 				<div class="popup-authorization__question">Ещё не зарегистрированы на сайте?</div>
 				<a href="#" class="popup-authorization__registration">Зарегистрироваться</a>
+			</div>
+		</div>
+	</div>
+	<div id="popupReset" class="popup popup-reset">
+		<div class="popup__body popup-reset__body">
+			<div class="popup__content popup-reset__content">
+				<a href="#" class="popup__close popup-reset__close close-popup"><img src="img/icons/close-popup.svg"
+						alt="close-popup"></a>
+				<div class="popup-reset__title">
+					Сбросить пароль
+				</div>
+				<form action="#" class="popup-reset__form">
+					<div class="popup-reset__item">
+						<label for="popupResetEmail" class="popup-reset__label">Введите ваш Email</label>
+						<input placeholder="Ivanov23@gmail.com" required id="popupResetEmail" name="popupResetEmail" type="email"
+							class="popup-reset__input">
+					</div>
+					<button type="submit" class="popup-reset__btn btn">ОТПРАВИТЬ СБРОС НА EMAIL</button>
+				</form>
 			</div>
 		</div>
 	</div>
