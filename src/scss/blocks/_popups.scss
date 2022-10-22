@@ -323,7 +323,6 @@
 		&::placeholder {
 			color: $colorEleven;
 		}
-		
 	}
 
 	// .popup-reset__btn
@@ -332,3 +331,101 @@
 		align-self: center;
 	}
 }
+//========================================================================================================================================================
+.popup-registration {
+	// .popup-registration__body
+
+	&__body {
+	}
+
+	// .popup-registration__content
+
+	&__content {
+		@extend .popup-reset__content;
+	}
+
+	// .popup-registration__close
+
+	&__close {
+	}
+
+	// .popup-registration__title
+
+	&__title {
+		@extend .popup-reset__title;
+	}
+
+	// .popup-registration__form
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid #e0e0e0;
+		@include adaptiv-value("padding-bottom", 35, 20, 1);
+	}
+
+	// .popup-registration__item
+
+	&__item {
+		@include adaptiv-value("margin-bottom", 30, 20, 1);
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0, 35%);
+			width: 14px;
+			height: 14px;
+			left: 12px;
+			background: url("../img/icons/phone-icon.svg") 0 0 / cover no-repeat;
+		}
+		&-sms {
+			&::before {
+				display: none;
+			}
+		}
+	}
+
+	// .popup-registration__label
+
+	&__label {
+		@extend .popup-reset__label;
+	}
+
+	// .popup-registration__input
+
+	&__input {
+		@extend .popup-reset__input;
+		&-sms {
+			padding: 15px 20px;
+		}
+	}
+
+	// .popup-registration__btn
+
+	&__btn {
+		align-self: center;
+	}
+
+	// .popup-registration__question
+
+	&__question {
+		color: $colorOne;
+		@include adaptiv-value("font-size", 16, 14, 1);
+		text-align: center;
+		@include adaptiv-value("margin-top", 25, 20, 1);
+		@include adaptiv-value("margin-bottom", 25, 20, 1);
+	}
+
+	// .popup-registration__link
+
+	&__link {
+		display: block;
+		color: $colorTwelve;
+		text-align: center;
+		text-decoration: underline;
+	}
+}
+//========================================================================================================================================================
+

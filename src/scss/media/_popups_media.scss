@@ -14,10 +14,15 @@
 			flex-wrap: wrap;
 		}
 		&__column {
-			&:first-child{
+			&:first-child {
 				margin-bottom: 20px;
 			}
 			flex: 1 1 100%;
+		}
+	}
+	.popup-reset {
+		&__content {
+			width: 100%;
 		}
 	}
 }

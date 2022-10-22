@@ -643,7 +643,7 @@
 					</div>
 				</form>
 				<div class="popup-authorization__question">Ещё не зарегистрированы на сайте?</div>
-				<a href="#" class="popup-authorization__registration">Зарегистрироваться</a>
+				<a href="#popupRegistration" class="popup-link popup-authorization__registration">Зарегистрироваться</a>
 			</div>
 		</div>
 	</div>
@@ -663,6 +663,48 @@
 					</div>
 					<button type="submit" class="popup-reset__btn btn">ОТПРАВИТЬ СБРОС НА EMAIL</button>
 				</form>
+			</div>
+		</div>
+	</div>
+	<div id="popupRegistration" class="popup popup-registration">
+		<div class="popup__body popup-registration__body">
+			<div class="popup__content popup-registration__content">
+				<a href="#" class="popup__close popup-registration__close close-popup"><img src="img/icons/close-popup.svg"
+						alt="close-popup"></a>
+				<div class="popup-registration__title">
+					Регистрация
+				</div>
+				<form action="#" class="popup-registration__form">
+					<div class="popup-registration__item">
+						<label for="popupRegistrationTel" class="popup-registration__label">Введите ваш телефон</label>
+						<input placeholder="Телефон" required id="popupRegistrationTel" name="popupRegistrationTel" type="tel"
+							class="popup-registration__input">
+					</div>
+					<button href="#popupRegistrationTelPhone" type="submit" class="popup-link popup-registration__btn btn">ПРОДОЛЖИТЬ</button>
+				</form>
+				<div class="popup-registration__question">Уже зарегистрированы на сайте?</div>
+				<a href="#popupAuthorization" class="popup-link popup-registration__link">Авторизоваться</a>
+			</div>
+		</div>
+	</div>
+	<div id="popupRegistrationTelPhone" class="popup popup-registration">
+		<div class="popup__body popup-registration__body">
+			<div class="popup__content popup-registration__content">
+				<a href="#" class="popup__close popup-registration__close close-popup"><img src="img/icons/close-popup.svg"
+						alt="close-popup"></a>
+				<div class="popup-registration__title">
+					Регистрация
+				</div>
+				<form action="#" class="popup-registration__form">
+					<div class="popup-registration__item popup-registration__item-sms">
+						<label for="popupRegistrationTelSms" class="popup-registration__label">Введите ваш код</label>
+						<input placeholder="Код из СМС" required id="popupRegistrationTelSms" name="popupRegistrationTelSms" type="tel"
+							class="popup-registration__input popup-registration__input-sms">
+					</div>
+					<button type="submit" class="popup-registration__btn btn">ПОДТВЕРДИТЬ</button>
+				</form>
+				<div class="popup-registration__question">Уже зарегистрированы на сайте?</div>
+				<a href="#popupAuthorization" class="popup-link popup-registration__link">Авторизоваться</a>
 			</div>
 		</div>
 	</div>
