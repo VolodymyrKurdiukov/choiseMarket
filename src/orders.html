@@ -2154,6 +2154,105 @@
 			</div>
 		</div>
 	</div>
+	<div id="popupEditOrder" class=" popup-edit-order">
+		<div class="popup__body popup-edit-order__body">
+			<div class="popup__content popup-edit-order__content">
+				<a href="#" class="popup__close popup-edit-order__close close-popup"><img src="img/icons/close-popup.svg"
+						alt="close-popup"></a>
+				<div class="popup-edit-order__title">Редактировать заказ</div>
+				<form action="#" class="popup-edit-order__form form-edit-order">
+					<div class="form-edit-order__row">
+						<div class="form-edit-order__column form-edit-order__column-one">
+							<div class="form-edit-order__item">
+								<label for="orderContact" class="form-edit-order__label">Изменить контакт получателя</label>
+								<input placeholder="Введите новый контакт" required id="orderContact" name="orderContact"
+									type="text" class="form-edit-order__input">
+							</div>
+							<div class="form-edit-order__label">Изменить способ доставки</div>
+							<div class="form-edit-order__wrapper">
+								<div class="form-edit-order__options">
+									<div class="form-edit-order__item">
+										<input checked id="orderDeliveryNp" value="orderNp" type="radio" name="orderDelivery"
+											class="form-edit-order__radio">
+										<label for="orderDeliveryNp" class="form-edit-order__radio-label">Доставка в отделение
+											Новой
+											почты</label>
+									</div>
+									<div class="form-edit-order__item ">
+										<input id="orderDeliverySelf" value="orderSelf" type="radio" name="orderDelivery"
+											class="form-edit-order__radio">
+										<label for="orderDeliverySelf" class="form-edit-order__radio-label">Самовывоз в Киеве с
+											логистического центра
+											компании</label>
+									</div>
+									<div class="form-edit-order__item form-edit-order__item-curier">
+										<input id="orderDeliveryCurier" value="orderDeliveryCurier" type="radio"
+											name="orderDelivery" class="form-edit-order__radio">
+										<label for="orderDeliveryCurier" class="form-edit-order__radio-label">Доставка курьером по
+											Киеву
+										</label>
+									</div>
+									<div class="form-edit-order__item">
+										<input id="orderDeliveryOther" value="orderOther" type="radio" name="orderDelivery"
+											class="form-edit-order__radio">
+										<label for="orderDeliveryOther" class="form-edit-order__radio-label">Другая служба
+											доставки
+										</label>
+									</div>
+								</div>
+								<div class="form-edit-order__item form-edit-order__item-margin">
+									<input placeholder="Город" required id="orderCity" name="orderCity" type="text"
+										class="form-edit-order__input">
+								</div>
+								<div class="form-edit-order__item form-edit-order__item-margin">
+									<select placeholder="Отделение" name="department" id="department"
+										class="form__select form-edit-order__select">
+										<option class="form-edit-order__select" value="Отделение">Отделение</option>
+										<option class="form-edit-order__select" value="1">1</option>
+										<option class="form-edit-order__select" value="2">2</option>
+										<option class="form-edit-order__select" value="3">3</option>
+									</select>
+								</div>
+								<div class="form-edit-order__item form-edit-order__item-margin">
+									<input placeholder="Адрес" required id="orderAddress" name="orderAddress" type="text"
+										class="form-edit-order__input">
+								</div>
+							</div>
+
+						</div>
+						<div class="form-edit-order__column">
+							<div data-da=".form-edit-order__column-one,575.98,0" class="form-edit-order__item">
+								<label for="orderChangeName" class="form-edit-order__label">Изменить имя получателя</label>
+								<select name="orderChangeName" id="orderChangeName"
+									class="form__select form-edit-order__select">
+									<option class="form-edit-order__select" value="Выберите имя получателя">Выберите имя
+										получателя</option>
+									<option class="form-edit-order__select" value="1">1</option>
+									<option class="form-edit-order__select" value="2">2</option>
+									<option class="form-edit-order__select" value="3">3</option>
+								</select>
+							</div>
+							<div data-da=".form-edit-order__column-one,575.98,0"  class="form-edit-order__item">
+								<label for="orderChangePayments" class="form-edit-order__label">Изменить способ оплаты</label>
+								<select name="orderChangePayments" id="orderChangePayments"
+									class="form__select form-edit-order__select">
+									<option class="form-edit-order__select" value="Выберите способ оплаты">Выберите способ оплаты
+									</option>
+									<option class="form-edit-order__select" value="1">Оплата картой</option>
+									<option class="form-edit-order__select" value="2">Оплата наложенным платежом через Новую
+										Почту</option>
+									<option class="form-edit-order__select" value="3">Оплата курьеру (доставка по Киеву)
+									</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="form-edit-order__button btn">сохранить изменения</button>
+				</form>
+
+			</div>
+		</div>
+	</div>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/script.js"></script>
