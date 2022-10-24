@@ -2147,14 +2147,15 @@
 					</div>
 					<div class="item-bottom-popup-info__buttons">
 						<a href="#" class="item-bottom-popup-info__link btn btn-dark">Удалить</a>
-						<a href="#" class="item-bottom-popup-info__link btn btn-light">редактировать</a>
+						<a href="#popupEditOrder"
+							class="popup-link item-bottom-popup-info__link btn btn-light">редактировать</a>
 					</div>
 					<a href="#" class="item-bottom-popup-info__print">Печать</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="popupEditOrder" class=" popup-edit-order">
+	<div id="popupEditOrder" class="popup popup-edit-order">
 		<div class="popup__body popup-edit-order__body">
 			<div class="popup__content popup-edit-order__content">
 				<a href="#" class="popup__close popup-edit-order__close close-popup"><img src="img/icons/close-popup.svg"
@@ -2200,22 +2201,47 @@
 										</label>
 									</div>
 								</div>
-								<div class="form-edit-order__item form-edit-order__item-margin">
-									<input placeholder="Город" required id="orderCity" name="orderCity" type="text"
-										class="form-edit-order__input">
+								<div class="form-edit-order__address-delivery form-edit-order__address-delivery-address active">
+									<div class="form-edit-order__item form-edit-order__item-margin">
+										<input placeholder="Город" required id="orderCity" name="orderCity" type="text"
+											class="form-edit-order__input">
+									</div>
+									<div class="form-edit-order__item form-edit-order__item-margin">
+										<select placeholder="Отделение" name="department" id="department"
+											class="form__select form-edit-order__select">
+											<option class="form-edit-order__select" value="Отделение">Отделение</option>
+											<option class="form-edit-order__select" value="1">1</option>
+											<option class="form-edit-order__select" value="2">2</option>
+											<option class="form-edit-order__select" value="3">3</option>
+										</select>
+									</div>
+									<div class="form-edit-order__item form-edit-order__item-margin">
+										<input placeholder="Адрес" required id="orderAddress" name="orderAddress" type="text"
+											class="form-edit-order__input">
+									</div>
 								</div>
-								<div class="form-edit-order__item form-edit-order__item-margin">
-									<select placeholder="Отделение" name="department" id="department"
-										class="form__select form-edit-order__select">
-										<option class="form-edit-order__select" value="Отделение">Отделение</option>
-										<option class="form-edit-order__select" value="1">1</option>
-										<option class="form-edit-order__select" value="2">2</option>
-										<option class="form-edit-order__select" value="3">3</option>
-									</select>
-								</div>
-								<div class="form-edit-order__item form-edit-order__item-margin">
-									<input placeholder="Адрес" required id="orderAddress" name="orderAddress" type="text"
-										class="form-edit-order__input">
+								<div class="form-edit-order__address-delivery form-edit-order__address-delivery-curier">
+									<div class="form-edit-order__item form-edit-order__item-margin">
+										<input placeholder="Город" required id="orderCityCurier" name="orderCityCurier"
+											type="text" class="form-edit-order__input">
+									</div>
+									<div class="form-edit-order__item form-edit-order__item-margin">
+										<input placeholder="Служба доставки" required id="orderDeliveryServiceCurier"
+											name="orderDeliveryServiceCurier" type="text" class="form-edit-order__input">
+									</div>
+									<div class="form-edit-order__item form-edit-order__item-margin">
+										<input placeholder="Адрес" required id="orderAddressCurier" name="orderAddressCurier"
+											type="text" class="form-edit-order__input">
+									</div>
+									<div class="form-edit-order__item form-edit-order__item-margin">
+										<input placeholder="Дом" required id="orderAddressHouseCurier" name="orderAddressHouseCurier"
+											type="text" class="form-edit-order__input">
+									</div>
+									<div class="form-edit-order__item form-edit-order__item-margin">
+										<input placeholder="Квартира" required id="orderAddressAppCurier" name="orderAddressAppCurier"
+											type="text" class="form-edit-order__input">
+									</div>
+
 								</div>
 							</div>
 
@@ -2232,7 +2258,7 @@
 									<option class="form-edit-order__select" value="3">3</option>
 								</select>
 							</div>
-							<div data-da=".form-edit-order__column-one,575.98,0"  class="form-edit-order__item">
+							<div data-da=".form-edit-order__column-one,575.98,0" class="form-edit-order__item">
 								<label for="orderChangePayments" class="form-edit-order__label">Изменить способ оплаты</label>
 								<select name="orderChangePayments" id="orderChangePayments"
 									class="form__select form-edit-order__select">

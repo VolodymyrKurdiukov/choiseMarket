@@ -750,6 +750,12 @@
 	// .form-edit-order__wrapper
 
 	&__wrapper {
+		border: 1px solid #c4c4c4;
+		padding-top: 15px;
+		padding-right: 15px;
+		@include adaptiv-value("padding-bottom", 40, 15, 1);
+		padding-left: 15px;
+		border-radius: 2px;
 		.form-edit-order__input {
 			border-radius: 2px;
 			background-color: #f8f8f8;
@@ -767,7 +773,19 @@
 			}
 		}
 	}
-
+	&__address-delivery {
+		padding-top: 8px;
+		border-top: 1px solid #c4c4c4;
+		&-address {
+			display: none;
+		}
+		&-curier {
+			display: none;
+		}
+		&.active{
+			display: block;
+		}
+	}
 	// .form-edit-order__options
 
 	&__options {

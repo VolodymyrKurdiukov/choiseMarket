@@ -1198,6 +1198,23 @@ $(document).ready(function () {
 		$('.delivery-ordering__address-wrapper-delivery').addClass('active');
 	});
 
+
+
+	$('.form-edit-order__item-curier').click(function (event) {
+		$(this).addClass('active');
+		$('.form-edit-order__address-delivery-curier').addClass('active');
+		$('.form-edit-order__address-delivery-address').removeClass('active');
+	});
+
+	$('.form-edit-order__item').not('.form-edit-order__item-curier').click(function (event) {
+		$(this).addClass('active');
+		$('.form-edit-order__address-delivery-curier').removeClass('active');
+		$('.form-edit-order__address-delivery-address').addClass('active');
+	});
+
+
+
+
 	$('.item-orders').click(function (event) {
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
