@@ -25,4 +25,23 @@
 			width: 100%;
 		}
 	}
+	.item-top-popup-info{
+		&__column{
+			flex: 0 0 50%;
+		}
+	}
+	.item-bottom-popup-info {
+		display: block;
+		&__row{
+			flex-wrap: wrap;
+		}
+		&__column{
+			flex: 1 1 100%;
+		}
+		&__link{
+			width: 100%;
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
 }

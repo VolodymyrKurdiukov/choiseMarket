@@ -63,6 +63,9 @@
 		@include adaptiv-value("margin-top", 40, 20, 1);
 		@include adaptiv-value("margin-bottom", 40, 20, 1);
 	}
+
+	&__total {
+	}
 }
 .item-orders {
 	cursor: pointer;
@@ -166,6 +169,8 @@
 	// .item-orders__info-link
 
 	&__info-link {
+		position: relative;
+		z-index: 2;
 	}
 }
 .item-orders-top {
@@ -333,5 +338,40 @@
 			font-weight: 400;
 			text-transform: uppercase;
 		}
+	}
+}
+
+.total-orders {
+	box-shadow: 0 1px 10px rgba(77, 77, 77, 0.05);
+	border-radius: 5px;
+	background-color: #ffffff;
+	margin-top: 6px;
+	padding-top: 15px;
+	@include adaptiv-value("padding-right", 70, 15, 1);
+	padding-bottom: 15px;
+	@include adaptiv-value("padding-left", 70, 15, 1);
+	// .total-orders__row
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .total-orders__label
+
+	&__label {
+		@include adaptiv-value("font-size", 16, 14, 1);
+		color: $colorNine;
+		text-transform: uppercase;
+	}
+
+	// .total-orders__value
+
+	&__value {
+		color: $colorOne;
+		@include adaptiv-value("font-size", 18, 14, 1);
+		font-weight: 500;
+		@include adaptiv-value("margin-bottom", 15, 10, 1);
 	}
 }
