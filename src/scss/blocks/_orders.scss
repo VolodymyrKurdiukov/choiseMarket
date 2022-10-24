@@ -16,10 +16,11 @@
 		@include adaptiv-value("font-size", 24, 20, 1);
 		@include adaptiv-value("margin-bottom", 30, 20, 1);
 	}
-
-	// .orders__unit-desctop
-
-	&__unit-desctop {
+	&__unit {
+		&-mobile {
+		}
+		&-desctop {
+		}
 	}
 
 	// .orders__item
@@ -164,6 +165,9 @@
 		flex: 1 1 auto;
 		position: relative;
 		z-index: 2;
+		img {
+			max-width: 100%;
+		}
 	}
 
 	// .item-orders__info-link
@@ -207,21 +211,33 @@
 	// .actions-orders__card
 
 	&__card {
+		img {
+			max-width: 100%;
+		}
 	}
 
 	// .actions-orders__close
 
 	&__close {
+		img {
+			max-width: 100%;
+		}
 	}
 
 	// .actions-orders__edit
 
 	&__edit {
+		img {
+			max-width: 100%;
+		}
 	}
 
 	// .actions-orders__print
 
 	&__print {
+		img {
+			max-width: 100%;
+		}
 	}
 }
 .hide-orders {
@@ -375,3 +391,4 @@
 		@include adaptiv-value("margin-bottom", 15, 10, 1);
 	}
 }
+
