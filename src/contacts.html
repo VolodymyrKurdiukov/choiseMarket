@@ -29,7 +29,7 @@
 <body>
 	<div class="wrapper">
 		<main class="page">
-			<header class="header">
+			<header class="header lock-padding">
 				<div class="header__top top-header">
 					<div class="top-header__container container">
 						<div class="top-header__row">
@@ -52,8 +52,8 @@
 								<div class="top-header__actions actions-top-header">
 									<ul class="actions-top-header__list">
 										<li class="actions-top-header__item">
-											<a href="#" class="actions-top-header__user"><img src="img/icons/user-icon.svg"
-													alt="user-icon"></a>
+											<a href="#popupAuthorization" class="actions-top-header__user popup-link"><img
+													src="img/icons/user-icon.svg" alt="user-icon"></a>
 										</li>
 										<li class="actions-top-header__item">
 											<a href="#" class="actions-top-header__cart"><img src="img/icons/shopping-bag.svg"
@@ -71,13 +71,13 @@
 											</ul>
 										</li>
 									</ul>
-
+			
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="header__bottom bottom-header bottom-header-main">
+				<div class="header__bottom bottom-header">
 					<div class="bottom-header__container container">
 						<div class="bottom-header__menu menu">
 							<div class="menu__icon">
@@ -87,7 +87,7 @@
 								<ul class="menu__list">
 									<li class="menu__item">
 										<div class="menu__link menu__link-arrow">магазин</div>
-										<ul class="menu__sub-list menu__sub-list-main">
+										<ul class="menu__sub-list">
 											<li class="menu__sub-item">
 												<a href="#" class="menu__sub-link">магазин</a>
 											</li>
@@ -101,7 +101,7 @@
 									</li>
 									<li class="menu__item">
 										<div class="menu__link menu__link-arrow">о компании</div>
-										<ul class="menu__sub-list menu__sub-list-main">
+										<ul class="menu__sub-list">
 											<li class="menu__sub-item">
 												<a href="#" class="menu__sub-link">о компании</a>
 											</li>
@@ -129,7 +129,8 @@
 										<a href="#" class="menu__link">ПРОГРАММЫ</a>
 									</li>
 								</ul>
-								<button class="menu__btn btn btn-menugreen">Вход в кабинет</button>
+								<button href="#popupAuthorization" class="menu__btn btn btn-menugreen popup-link">Вход в
+									кабинет</button>
 								<button class="menu__btn btn btn-menugray">КОРЗИНА</button>
 								<div class="menu__langs lang-menu">
 									<div class="lang-menu__label">Язык</div>

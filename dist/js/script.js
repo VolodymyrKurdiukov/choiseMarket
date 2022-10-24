@@ -973,7 +973,7 @@ $(document).ready(function () {
 			popupAuthorizationPassword: "required"
 		},
 		messages: {
-			popupAuthorizationLogin:{
+			popupAuthorizationLogin: {
 				required: "Введите логин",
 				email: "Такой логин не найден"
 			},
