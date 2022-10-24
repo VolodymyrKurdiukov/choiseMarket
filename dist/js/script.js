@@ -566,6 +566,8 @@ if (cartSlider.length > 0) {
 		},
 	});
 };
+
+
 //========================================================================================================================================================
 
 let news = document.querySelectorAll('.news');
@@ -962,6 +964,23 @@ $(document).ready(function () {
 		$(this).addClass('active');
 		$('.delivery-ordering__address-wrapper-curier').removeClass('active');
 		$('.delivery-ordering__address-wrapper-delivery').addClass('active');
+	});
+
+	$('.item-orders').click(function (event) {
+		$(this).toggleClass('active').next().slideToggle(300);
+	});
+
+	$('.orders__link').click(function () {
+		if ($(this).attr('data-show') === "true") {
+			$(this).html("Скрыть");
+			$(this).attr('data-show', "false");
+			$('.orders__body-more').slideToggle(300);
+		}
+		else {
+			$(this).html("смотреть БОЛЬШЕ");
+			$(this).attr('data-show', "true");
+			$('.orders__body-more').slideToggle(300);
+		}
 	});
 
 	$('.popup-authorization__form').validate({

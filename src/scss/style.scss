@@ -31,8 +31,8 @@ body.lock {
 		transition: all 1s ease;
 	}
 }
-body.lock-popup{
-		overflow: hidden;
+body.lock-popup {
+	overflow: hidden;
 }
 .container {
 	max-width: 1140px;
@@ -122,8 +122,11 @@ body.lock-popup{
 	&__authorization {
 	}
 
-			&__ordering {
-		}
+	&__ordering {
+	}
+
+	&__orders {
+	}
 }
 @import "blocks/header";
 @import "blocks/main";
@@ -142,6 +145,7 @@ body.lock-popup{
 @import "blocks/brandPage";
 @import "blocks/cart";
 @import "blocks/ordering";
+@import "blocks/orders";
 @import "blocks/footer";
 
 @import "media/header_media";
