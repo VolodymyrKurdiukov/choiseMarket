@@ -1,18 +1,12 @@
 .contacts {
 	@include adaptiv-value("margin-bottom", 85, 50, 1);
-	// .contacts__container
-
-	&__container {
-	}
 
 	// .contacts__row
-
 	&__row {
 		display: flex;
 	}
 
 	// .contacts__column
-
 	&__column {
 		&:first-child {
 			flex: 0 0 33.333%;
@@ -20,31 +14,18 @@
 		flex: 1 1 auto;
 	}
 
-	// .contacts__title
-
-	&__title {
-	}
-
-	// .contacts__form
-
-	&__form {
-	}
-
 	// .contacts__sub-row
-
 	&__sub-row {
 		display: flex;
 		justify-content: space-between;
 	}
 
 	// .contacts__sub-column
-
 	&__sub-column {
 		flex: 0 0 33.333%;
 	}
 
 	// .contacts__sub-title
-
 	&__sub-title {
 		color: $colorOne;
 		text-transform: uppercase;
@@ -52,7 +33,6 @@
 	}
 
 	// .contacts__label
-
 	&__label {
 		color: $colorNine;
 		font-size: 12px;
@@ -69,7 +49,6 @@
 	}
 
 	// .contacts__map
-
 	&__map {
 		@include adaptiv-value("margin-top", 30, 20, 1);
 		iframe {
@@ -81,29 +60,26 @@
 }
 .form-contscts {
 	@include adaptiv-value("margin-bottom", 65, 30, 1);
-	// .form-contscts__row
 
+	// .form-contscts__row
 	&__row {
 		display: flex;
 		margin: 0px -15px;
 	}
 
 	// .form-contscts__column
-
 	&__column {
 		flex: 0 0 50%;
 		padding: 0px 15px;
 	}
 
 	// .form-contscts__item
-
 	&__item {
 		@include adaptiv-value("margin-bottom", 40, 20, 1);
 		border-bottom: 1px solid #000;
 	}
 
 	// .form-contscts__input
-
 	&__input {
 		border-radius: 0 !important;
 		border: none !important;
@@ -121,7 +97,6 @@
 	}
 
 	// .form-contscts__textarea
-
 	&__textarea {
 		border-radius: 0 !important;
 		border: none !important;
@@ -137,10 +112,5 @@
 			color: $colorThirteen;
 			@include adaptiv-value("font-size", 15, 14, 1);
 		}
-	}
-
-	// .form-contscts__link
-
-	&__link {
 	}
 }

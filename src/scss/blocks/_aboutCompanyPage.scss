@@ -1,12 +1,7 @@
 .about-company-page {
 	@include adaptiv-value("margin-bottom", 70, 20, 1);
-	// .about-company-page__container
-
-	&__container {
-	}
 
 	// .about-company-page__row
-
 	&__row {
 		display: flex;
 		margin: 0px -15px 60px -15px;
@@ -14,7 +9,6 @@
 	}
 
 	// .about-company-page__column
-
 	&__column {
 		flex: 0 0 33.333%;
 		padding: 0px 15px;
@@ -23,13 +17,7 @@
 		}
 	}
 
-	// .about-company-page__item
-
-	&__item {
-	}
-
 	// .about-company-page__img
-
 	&__img {
 		padding: 0px 0px 123% 0px;
 		border-radius: 5px;
@@ -44,15 +32,9 @@
 	}
 
 	// .about-company-page__link
-
 	&__link {
 		@include adaptiv-value("margin-top", 40, 20, 1);
 		@include adaptiv-value("margin-bottom", 140, 50, 1);
-	}
-
-	// .about-company-page__slider
-
-	&__slider {
 	}
 }
 
@@ -61,7 +43,6 @@
 	padding-left: 120px;
 
 	// .slider-cards__column
-
 	&__column {
 		&:first-child {
 			flex: 0 0 445px;
@@ -71,7 +52,6 @@
 	}
 
 	// .slider-cards__bg
-
 	&__bg {
 		padding: 0px 0px 75.1% 0px;
 		border-radius: 5px;
@@ -79,7 +59,6 @@
 	}
 
 	// .slider-cards__wrapper
-
 	&__wrapper {
 		position: relative;
 		width: 100%;
@@ -88,7 +67,6 @@
 	}
 
 	// .slider-cards__body
-
 	&__body {
 		display: flex;
 		@include adaptiv-value("margin-right", -15, -7, 1);
@@ -97,7 +75,6 @@
 	}
 
 	// .slider-cards__item
-
 	&__item {
 		flex: 0 0 16.667%;
 		padding: 0px 15px;
@@ -107,7 +84,6 @@
 	}
 
 	// .slider-cards__img
-
 	&__img {
 		padding: 0px 0px 100% 0px;
 		border-radius: 5px;

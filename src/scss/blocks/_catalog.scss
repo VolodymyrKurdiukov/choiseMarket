@@ -1,29 +1,22 @@
 .catalog {
 	margin-bottom: 125px;
-	// .catalog__container
-
-	&__container {
-	}
 
 	// .catalog__filter
-
 	&__filter {
 		margin-bottom: 30px;
 	}
-	// .catalog__wrapper
 
+	// .catalog__wrapper
 	&__wrapper {
 		display: flex;
 	}
 
 	// .catalog__side
-
 	&__side {
 		flex: 0 0 255px;
 	}
 
 	// .catalog__content
-
 	&__content {
 		flex: 1 1 auto;
 		padding-left: 30px;
@@ -31,7 +24,6 @@
 		flex-direction: column;
 	}
 	// .catalog__row
-
 	&__row {
 		display: flex;
 		flex-wrap: wrap;
@@ -40,7 +32,6 @@
 	}
 
 	// .catalog__column
-
 	&__column {
 		flex: 0 0 33.333%;
 		@include adaptiv-value("padding-right", 14, 5, 1);
@@ -49,7 +40,6 @@
 	}
 
 	// .catalog__item
-
 	&__item {
 		height: 100%;
 		cursor: pointer;
@@ -70,8 +60,8 @@
 	&-brand-page{
 		background-color: $colorFour;
 	}
-	// .form-filter__title
 
+	// .form-filter__title
 	&__title {
 		color: #ffffff;
 		@include adaptiv-value("font-size", 16, 14, 1);
@@ -79,7 +69,6 @@
 	}
 
 	// .form-filter__item
-
 	&__item {
 		display: flex;
 		align-items: center;
@@ -87,14 +76,12 @@
 	}
 
 	// .form-filter__label
-
 	&__label {
 		color: #ffffff;
 		margin-right: 10px;
 	}
 
 	// .form-filter__select
-
 	&__select {
 		&-find {
 			color: $colorFourteen;
@@ -112,19 +99,13 @@
 	margin-bottom: 10px;
 	padding: 40px 25px 1px 25px;
 	overflow: hidden;
-	// .side__list
-
-	&__list {
-	}
 
 	// .side__item
-
 	&__item {
 		margin-bottom: 35px;
 	}
 
 	// .side__link
-
 	&__link {
 		display: block;
 		color: $colorEleven;
@@ -174,25 +155,23 @@
 			}
 		}
 	}
+
 	//.side__icon
 	&__icon {
 		margin-right: 20px;
 	}
 
 	// .side__sub-list
-
 	&__sub-list {
 		margin-top: 17px;
 	}
 
 	// .side__sub-item
-
 	&__sub-item {
 		margin-bottom: 11px;
 	}
 
 	// .side__sub-link
-
 	&__sub-link {
 		color: $colorEleven;
 		transition: all 0.3s ease;
@@ -204,14 +183,13 @@
 	flex-direction: column;
 	transition: all 0.3s ease;
 	padding: 8px;
-	// .item-catalog__img
 
+	// .item-catalog__img
 	&__img {
 		padding: 0px 0px 78.57% 0px;
 	}
 
 	// .item-catalog__row
-
 	&__row {
 		display: flex;
 		align-items: center;
@@ -219,7 +197,6 @@
 	}
 
 	// .item-catalog__label
-
 	&__label {
 		color: $colorOne;
 		@include adaptiv-value("font-size", 16, 14, 1);
@@ -227,7 +204,6 @@
 		text-transform: uppercase;
 	}
 	p {
-		// flex: 1 1 auto;
 		color: $colorEleven;
 		font-size: 12px;
 		line-height: 130%;
@@ -235,8 +211,8 @@
 		max-width: 185px;
 		margin-bottom: 20px;
 	}
-	// .item-catalog__point
 
+	// .item-catalog__point
 	&__point {
 		width: 41px;
 		height: 41px;
@@ -256,7 +232,6 @@
 	}
 
 	// .item-catalog__price
-
 	&__price {
 		color: $colorOne;
 		font-size: 20px;
@@ -278,7 +253,6 @@
 	}
 
 	// .item-catalog__link
-
 	&__link {
 		padding-left: 15px;
 		padding-right: 15px;

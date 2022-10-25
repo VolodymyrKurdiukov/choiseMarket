@@ -227,8 +227,8 @@
 	}
 }
 .item-our-brands {
-	// .item-our-brands__wrapper
 
+	// .item-our-brands__wrapper
 	&__wrapper {
 		position: relative;
 		&::before {
@@ -246,7 +246,6 @@
 	}
 
 	// .item-our-brands__logo
-
 	&__logo {
 		display: none;
 		position: absolute;
@@ -260,7 +259,6 @@
 	}
 
 	// .item-our-brands__body
-
 	&__body {
 		display: none;
 		position: absolute;
@@ -279,7 +277,6 @@
 	}
 
 	// .item-our-brands__text
-
 	&__text {
 		color: $colorOne;
 		@include adaptiv-value("font-size", 18, 14, 1);
@@ -289,13 +286,7 @@
 		@include adaptiv-value("margin-bottom", 25, 20, 1);
 	}
 
-	// .item-our-brands__link
-
-	&__link {
-	}
-
 	// .item-our-brands__img
-
 	&__img {
 		padding: 0px 0px 152% 0px;
 		border-radius: 5px;
@@ -306,13 +297,8 @@
 .benefits-brands {
 	margin-top: 30px;
 	padding-bottom: 30px;
-	// .benefits-brands__container
-
-	&__container {
-	}
 
 	// .benefits-brands__row
-
 	&__row {
 		display: flex;
 		align-items: center;
@@ -321,7 +307,6 @@
 	}
 
 	// .benefits-brands__column
-
 	&__column {
 		flex: 0 0 25%;
 		border-right: 1px solid $colorTen;
@@ -332,14 +317,12 @@
 	}
 
 	// .benefits-brands__item
-
 	&__item {
 		display: flex;
 		align-items: center;
 	}
 
 	// .benefits-brands__icon
-
 	&__icon {
 		img {
 			max-width: 100%;
@@ -347,7 +330,6 @@
 	}
 
 	// .benefits-brands__label
-
 	&__label {
 		color: $colorNine;
 		font-size: 14px;
@@ -365,14 +347,13 @@
 	&__conainer-right {
 		margin-bottom: 50px;
 	}
-	// .top__title
 
+	// .top__title
 	&__title {
 		@include adaptiv-value("margin-bottom", 45, 20, 1);
 	}
 
 	// .top__row
-
 	&__row {
 		display: flex;
 		&:nth-child(even) {
@@ -386,7 +367,6 @@
 	}
 
 	// .top__column
-
 	&__column {
 		&:first-child {
 			flex: 0 0 445px;
@@ -398,7 +378,6 @@
 	}
 
 	// .top__img
-
 	&__img {
 		padding: 0px 0px 75.28% 0px;
 		border-radius: 5px;
@@ -406,7 +385,6 @@
 	}
 
 	// .top__wrapper
-
 	&__wrapper {
 		position: relative;
 		width: 100%;
@@ -415,18 +393,17 @@
 	}
 
 	// .top__body
-
 	&__body {
 		display: flex;
 		margin: 0px -20px;
 	}
 
 	// .top__item
-
 	&__item {
 		padding: 0px 20px;
 		flex: 0 0 320px;
 	}
+
 	// .main__scrollbar
 	&__scrollbar {
 		position: relative;
@@ -434,10 +411,6 @@
 		height: 1px;
 		background-color: $colorEleven;
 		margin-bottom: 30px;
-		&-top {
-		}
-		&-bottom {
-		}
 	}
 
 	// .main__drag-scroll
@@ -461,14 +434,13 @@
 .item-top {
 	display: flex;
 	flex-direction: column;
-	// .item-top__img
 
+	// .item-top__img
 	&__img {
 		padding: 0px 0px 76.74% 0px;
 	}
 
 	// .item-top__row
-
 	&__row {
 		display: flex;
 		align-items: center;
@@ -476,7 +448,6 @@
 	}
 
 	// .item-top__label
-
 	&__label {
 		color: $colorOne;
 		@include adaptiv-value("font-size", 16, 14, 1);
@@ -494,7 +465,6 @@
 	}
 
 	// .item-top__point
-
 	&__point {
 		width: 41px;
 		height: 41px;
@@ -514,7 +484,6 @@
 	}
 
 	// .item-top__price
-
 	&__price {
 		color: $colorOne;
 		font-size: 20px;
@@ -534,36 +503,24 @@
 			}
 		}
 	}
-
-	// .item-top__link
-
-	&__link {
-	}
 }
 //========================================================================================================================================================
 
 .your {
 	margin-bottom: 100px;
-	// .your__container
-
-	&__container {
-	}
 
 	// .your__title
-
 	&__title {
 		margin-bottom: 50px;
 	}
 
 	// .your__row
-
 	&__row {
 		display: flex;
 		align-items: center;
 	}
 
 	// .your__column
-
 	&__column {
 		flex: 1 1 auto;
 		&:first-child {
@@ -575,7 +532,6 @@
 	}
 
 	// .your__img
-
 	&__img {
 		padding: 0px 0px 88.88% 0px;
 		&-small {
@@ -584,14 +540,12 @@
 	}
 
 	// .your__body
-
 	&__body {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
 
 	// .your__sub-label
-
 	&__sub-label {
 		color: $colorFour;
 		font-weight: 500;
@@ -600,7 +554,6 @@
 	}
 
 	// .your__label
-
 	&__label {
 		color: $colorOne;
 		font-size: 32px;
@@ -615,7 +568,6 @@
 	}
 
 	// .your__link
-
 	&__link {
 		padding-left: 40px;
 		padding-right: 40px;
@@ -625,21 +577,19 @@
 
 .partners {
 	margin-bottom: 100px;
-	// .partners__container
 
+	// .partners__container
 	&__container {
 		display: flex;
 		flex-direction: column;
 	}
 
 	// .partners__title
-
 	&__title {
 		margin-bottom: 7px;
 	}
 
 	// .partners__sub-title
-
 	&__sub-title {
 		color: $colorFour;
 		font-size: 24px;
@@ -648,7 +598,6 @@
 	}
 
 	// .partners__wrapper
-
 	&__wrapper {
 		position: relative;
 		padding-top: 120px;
@@ -656,7 +605,6 @@
 	}
 
 	// .partners__row
-
 	&__row {
 		position: relative;
 		z-index: 2;
@@ -670,7 +618,6 @@
 	}
 
 	// .partners__column
-
 	&__column {
 		flex: 0 0 300px;
 		&:last-child {
@@ -685,13 +632,7 @@
 		}
 	}
 
-	// .partners__body
-
-	&__body {
-	}
-
 	// .partners__label
-
 	&__label {
 		color: $colorEleven;
 		font-size: 20px;
@@ -775,7 +716,6 @@
 	}
 
 	// .partners__bg
-
 	&__bg {
 		position: absolute;
 		width: 100%;
@@ -796,34 +736,22 @@
 	}
 
 	// .partners__buttons
-
 	&__buttons {
 		align-self: center;
-	}
-
-	// .partners__link
-
-	&__link {
 	}
 }
 //========================================================================================================================================================
 
 .charity {
 	margin-bottom: 100px;
-	// .charity__container
-
-	&__container {
-	}
 
 	// .charity__title
-
 	&__title {
 		margin-bottom: 40px;
 		max-width: 610px;
 	}
 
 	// .charity__item
-
 	&__item {
 		position: relative;
 		&::before {
@@ -850,7 +778,6 @@
 	}
 
 	// .charity__body
-
 	&__body {
 		margin: 0px auto;
 		max-width: 310px;
@@ -860,7 +787,6 @@
 	}
 
 	// .charity__label
-
 	&__label {
 		color: $colorOne;
 		font-size: 24px;
@@ -871,7 +797,6 @@
 	}
 
 	// .charity__icon
-
 	&__icon {
 		position: relative;
 		display: block;
@@ -893,13 +818,7 @@
 		margin-bottom: 25px;
 	}
 
-	// .charity__link
-
-	&__link {
-	}
-
 	// .charity__bg
-
 	&__bg {
 		position: absolute;
 		width: 100%;
@@ -917,19 +836,13 @@
 
 .news {
 	margin-bottom: 70px;
-	// .news__container
-
-	&__container {
-	}
 
 	// .news__title
-
 	&__title {
 		margin-bottom: 40px;
 	}
 
 	// .news__row
-
 	&__row {
 		display: flex;
 		margin: 0px -15px;
@@ -937,7 +850,6 @@
 	}
 
 	// .news__column
-
 	&__column {
 		flex: 0 0 25%;
 		padding: 0px 15px;
@@ -945,7 +857,6 @@
 	}
 
 	// .news__item
-
 	&__item {
 		display: block;
 		height: 100%;
@@ -954,7 +865,6 @@
 	}
 
 	// .news__label
-
 	&__label {
 		color: $colorOne;
 		font-weight: 300;
@@ -971,13 +881,13 @@
 	}
 
 	// .news__img
-
 	&__img {
 		padding: 0px 0px 100% 0px;
 		border-radius: 5px;
 		transition: all 0.3s ease;
 		position: relative;
 	}
+
 	//.news__more
 	&__more {
 		text-align: center;
@@ -991,9 +901,5 @@
 		transform: translate(10%, 50%);
 		z-index: 2;
 		white-space: nowrap;
-	}
-	// .news__breadcrumbs
-
-	&__breadcrumbs {
 	}
 }

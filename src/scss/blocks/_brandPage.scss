@@ -1,11 +1,6 @@
 .brand-page {
-	// .brand-page__container
-
-	&__container {
-	}
 
 	// .brand-page__unit
-
 	&__unit {
 		position: relative;
 		@include adaptiv-value("margin-bottom", 50, 20, 1);
@@ -23,21 +18,19 @@
 		text-transform: uppercase;
 		max-width: 265px;
 	}
-	// .brand-page__title
 
+	// .brand-page__title
 	&__title {
 		margin-bottom: 20px;
 	}
 
 	// .brand-page__img
-
 	&__img {
 		padding: 0px 0px 40.55% 0px;
 		border-radius: 5px;
 	}
 
 	// .brand-page__sub-title
-
 	&__sub-title {
 		color: $colorOne;
 		@include adaptiv-value("font-size", 16, 14, 1);
@@ -50,20 +43,14 @@
 //========================================================================================================================================================
 
 .tabs-brand-page {
-	// .tabs-brand-page__container
 
+	// .tabs-brand-page__container
 	&__container {
 		display: flex;
 		flex-direction: column;
 	}
 
-	// .tabs-brand-page__wrapper
-
-	&__wrapper {
-	}
-
 	// .tabs-brand-page__tabs
-
 	&__tabs {
 		display: flex;
 		align-items: center;
@@ -75,7 +62,6 @@
 	}
 
 	// .tabs-brand-page__tab
-
 	&__tab {
 		cursor: pointer;
 		flex: 0 0 25%;
@@ -110,15 +96,6 @@
 		}
 	}
 
-	// .tabs-brand-page__content
-
-	&__content {
-	}
-
-	// .tabs-brand-page__item
-
-	&__item {
-	}
 	&__rounded {
 		cursor: pointer;
 		align-self: center;
@@ -131,14 +108,13 @@
 }
 
 .item-tabs-brand-page {
-	// .item-tabs-brand-page__filter
 
+	// .item-tabs-brand-page__filter
 	&__filter {
 		@include adaptiv-value("margin-bottom", 40, 20, 1);
 	}
 
 	// .item-tabs-brand-page__row
-
 	&__row {
 		display: flex;
 		flex-wrap: wrap;
@@ -146,7 +122,6 @@
 	}
 
 	// .item-tabs-brand-page__column
-
 	&__column {
 		flex: 0 0 25%;
 		padding: 0px 15px;
@@ -156,20 +131,14 @@
 
 .other-brands {
 	@include adaptiv-value("margin-bottom", 120, 50, 1);
-	// .other-brands__container
-
-	&__container {
-	}
 
 	// .other-brands__title
-
 	&__title {
 		@include adaptiv-value("margin-bottom", 60, 50, 1);
 		max-width: 335px;
 	}
 
 	// .other-brands__wrapper
-
 	&__wrapper {
 		min-width: 0;
 		overflow: hidden;
@@ -179,7 +148,6 @@
 	}
 
 	// .other-brands__body
-
 	&__body {
 		display: flex;
 		margin: 0px -15px;
@@ -187,7 +155,6 @@
 	}
 
 	// .other-brands__item
-
 	&__item {
 		min-width: 0;
 		flex: 0 0 25%;
@@ -210,13 +177,8 @@
 	}
 }
 .item-other-brands {
-	// .item-other-brands__body
-
-	&__body {
-	}
 
 	// .item-other-brands__img
-
 	&__img {
 		padding: 0px 0px 118.5% 0px;
 		border-radius: 5px;
@@ -226,14 +188,13 @@
 
 .sale {
 	@include adaptiv-value("margin-bottom", 140, 50, 1);
-	// .sale__container
 
+	// .sale__container
 	&__container {
 		position: relative;
 	}
 
 	// .sale__wrapper
-
 	&__wrapper {
 		min-width: 0;
 		overflow: hidden;
@@ -244,14 +205,12 @@
 	}
 
 	// .sale__body
-
 	&__body {
 		display: flex;
 		min-width: 0;
 	}
 
 	// .sale__item
-
 	&__item {
 		flex: 1 0 100%;
 		position: relative;
@@ -259,7 +218,6 @@
 	}
 
 	// .sale__controls
-
 	&__controls {
 		display: flex;
 		position: absolute;
@@ -270,7 +228,6 @@
 	}
 
 	// .sale__button
-
 	&__button {
 		width: 46px;
 		height: 46px;
@@ -288,20 +245,17 @@
 	}
 
 	// .sale__button-prev
-
 	&__button-prev {
 		transform: rotate(180deg) translate(0, -1%);
 		margin-right: 15px;
 	}
 
 	// .sale__button-next
-
 	&__button-next {
 		margin-right: 20px;
 	}
 
 	// .sale__scrollbar
-
 	&__scrollbar {
 		position: relative;
 		width: 280px;
@@ -318,8 +272,8 @@
 }
 .item-sale {
 	position: relative;
-	// .item-sale__body
 
+	// .item-sale__body
 	&__body {
 		position: relative;
 		z-index: 1;
@@ -330,7 +284,6 @@
 	}
 
 	// .item-sale__title
-
 	&__title {
 		color: #ffffff;
 		@include adaptiv-value("font-size", 48, 24, 1);
@@ -341,13 +294,7 @@
 		@include adaptiv-value("margin-bottom", 30, 20, 1);
 	}
 
-	// .item-sale__link
-
-	&__link {
-	}
-
 	// .item-sale__bg
-
 	&__bg {
 		position: absolute;
 		width: 100%;

@@ -1,11 +1,6 @@
 .weight {
-	// .weight__container
-
-	&__container {
-	}
 
 	// .weight__row
-
 	&__row {
 		display: flex;
 		justify-content: space-between;
@@ -13,7 +8,6 @@
 	}
 
 	// .weight__column
-
 	&__column {
 		flex: 1 1 auto;
 		&:last-child {
@@ -26,7 +20,6 @@
 	}
 
 	// .weight__title
-
 	&__title {
 		margin-bottom: 20px;
 	}
@@ -40,7 +33,6 @@
 		}
 	}
 	// .weight__img
-
 	&__img {
 		border-radius: 5px;
 		@include adaptiv-value("width", 375, 187, 1);
@@ -51,8 +43,8 @@
 			object-fit: cover;
 			border-radius: 5px;
 		}
-		// .weight__img-small
 
+		// .weight__img-small
 		&-small {
 			position: absolute;
 			bottom: -40px;
@@ -62,9 +54,5 @@
 			// @include adaptiv-value("margin-left", -55,0 , 1);
 			// @include adaptiv-value("margin-top", -155,0 , 1);
 		}
-	}
-	// .weight__row-bottom
-
-	&__row-bottom {
 	}
 }

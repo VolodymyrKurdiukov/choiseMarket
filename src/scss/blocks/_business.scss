@@ -1,25 +1,18 @@
 .business {
 	@include adaptiv-value("margin-bottom", 70, 20, 1);
-	// .business__container
-
-	&__container {
-	}
 
 	// .business__title
-
 	&__title {
 		margin-bottom: 20px;
 	}
 
 	// .business__row
-
 	&__row {
 		display: flex;
 		margin: 0px -15px 40px -15px;
 	}
 
 	// .business__column
-
 	&__column {
 		padding: 0px 15px;
 		&:first-child {
@@ -29,7 +22,6 @@
 	}
 
 	// .business__sub-title
-
 	&__sub-title {
 		color: $colorOne;
 		@include adaptiv-value("font-size", 16, 14, 1);
@@ -47,8 +39,8 @@
 	&__wrapper-img {
 		padding: 0px 100px;
 	}
-	// .business__img
 
+	// .business__img
 	&__img {
 		padding: 0px 0px 49% 0px;
 		border-radius: 5px;
@@ -56,14 +48,12 @@
 	}
 
 	// .business__row-bottom
-
 	&__row-bottom {
 		display: flex;
 		margin: 0px -15px 100px -15px;
 	}
 
 	// .business__column-bottom
-
 	&__column-bottom {
 		padding-right: 15px;
 		padding-left: 15px;
@@ -77,7 +67,6 @@
 	}
 
 	// .business__body
-
 	&__body {
 		display: flex;
 		width: 100%;
@@ -86,7 +75,6 @@
 	}
 
 	// .business__label
-
 	&__label {
 		color: $colorOne;
 		@include adaptiv-value("font-size", 32, 20, 1);
@@ -96,20 +84,13 @@
 	}
 
 	// .business__numbers
-
 	&__numbers {
 		display: flex;
 		color: $colorFour;
 		@include adaptiv-value("margin-bottom", 25, 20, 1);
 	}
 
-	// .business__number
-
-	&__number {
-	}
-
 	// .business__divider
-
 	&__divider {
 		margin: 0px 90px;
 	}
@@ -118,8 +99,8 @@
 		font-size: 14px;
 		line-height: 160%;
 	}
-	// .business__wrapper
 
+	// .business__wrapper
 	&__wrapper {
 		border-left: 1px solid $colorOne;
 		padding-left: 25px;
@@ -129,7 +110,6 @@
 	}
 
 	// .business__item
-
 	&__item {
 		padding-bottom: 30px;
 		border-bottom: 1px solid $colorOne;
@@ -139,10 +119,6 @@
 		}
 	}
 
-	// .business__slider
-
-	&__slider {
-	}
 	&__scroll {
 		position: absolute;
 		top: 0;
@@ -161,8 +137,8 @@
 	}
 }
 .item-business {
-	// .item-business__number
 
+	// .item-business__number
 	&__number {
 		color: $colorFour;
 		margin-bottom: 5px;

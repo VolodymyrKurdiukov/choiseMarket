@@ -1,19 +1,13 @@
 .product-card {
 	margin-bottom: 35px;
-	// .product-card__container
-
-	&__container {
-	}
 
 	// .product-card__row
-
 	&__row {
 		display: flex;
 		margin: 0px -15px;
 	}
 
 	// .product-card__column
-
 	&__column {
 		&:first-child {
 			flex: 0 0 40%;
@@ -24,18 +18,11 @@
 	}
 
 	// .product-card__sliders
-
 	&__sliders {
 		height: 100%;
 	}
 
-	// .product-card__slider
-
-	&__slider {
-	}
-
 	// .product-card__body
-
 	&__body {
 		background-color: #fff;
 		border-radius: 5px;
@@ -47,12 +34,10 @@
 	}
 
 	// .product-card__list
-
 	&__list {
 	}
 
 	// .product-card__item
-
 	&__item {
 		color: $colorOne;
 		@include adaptiv-value("font-size", 16, 14, 1);
@@ -79,8 +64,8 @@
 			background: url("../img/icons/product-card-icon.svg") 0 0 / cover no-repeat;
 		}
 	}
-	// .product-card__description
 
+	// .product-card__description
 	&__description {
 		padding-left: 25px;
 		margin-top: 20px;
@@ -88,7 +73,6 @@
 	}
 
 	// .product-card__label
-
 	&__label {
 		font-weight: 500;
 		color: $colorTwelve;
@@ -97,14 +81,12 @@
 	}
 
 	// .product-card__descr
-
 	&__descr {
 		color: $colorOne;
 		line-height: 160%;
 	}
 
 	// .product-card__sub-row
-
 	&__sub-row {
 		display: flex;
 		align-items: center;
@@ -114,7 +96,6 @@
 	}
 
 	// .product-card__sub-column
-
 	&__sub-column {
 		flex: 0 0 50%;
 		&:first-child {
@@ -124,7 +105,6 @@
 	}
 
 	// .product-card__price
-
 	&__price {
 		color: $colorOne;
 		@include adaptiv-value("font-size", 32, 20, 1);
@@ -133,16 +113,10 @@
 	}
 
 	// .product-card__old-price
-
 	&__old-price {
 		color: $colorEighteen;
 		@include adaptiv-value("font-size", 28, 20, 1);
 		text-decoration: line-through;
-	}
-
-	// .product-card__quantity
-
-	&__quantity {
 	}
 }
 .slider-product-card {
@@ -150,14 +124,13 @@
 	height: 100%;
 	display: flex;
 	overflow: hidden;
-	// .slider-product-card__body
 
+	// .slider-product-card__body
 	&__body {
 		display: flex;
 	}
 
 	// .slider-product-card__item
-
 	&__item {
 		display: flex;
 		align-items: center;
@@ -241,8 +214,8 @@
 	> *:not(:last-child) {
 		@include adaptiv-value("margin-right", 30, 10, 1);
 	}
-	// .quantity-product-card__label
 
+	// .quantity-product-card__label
 	&__label {
 		color: $colorEighteen;
 	}
@@ -264,7 +237,6 @@
 	}
 
 	// .quantity-product-card__button-minus
-
 	&__button-minus {
 		&::before {
 			width: 10px;
@@ -274,7 +246,6 @@
 	}
 
 	// .quantity-product-card__input
-
 	&__input {
 		width: 15px;
 		color: $colorOne;
@@ -285,7 +256,6 @@
 	}
 
 	// .quantity-product-card__button-plus
-
 	&__button-plus {
 		&::before {
 			width: 10px;
@@ -309,13 +279,8 @@
 
 .product-tabs {
 	@include adaptiv-value("margin-bottom", 80, 50, 1);
-	// .product-tabs__container
-
-	&__container {
-	}
 
 	// .product-tabs__wrapper
-
 	&__wrapper {
 		background-color: #fff;
 		border-radius: 5px;
@@ -326,7 +291,6 @@
 	}
 
 	// .product-tabs__tabs
-
 	&__tabs {
 		display: flex;
 		align-items: center;
@@ -347,7 +311,6 @@
 	}
 
 	// .product-tabs__tab
-
 	&__tab {
 		color: $colorOne;
 		@include adaptiv-value("font-size", 16, 14, 1);
@@ -367,13 +330,7 @@
 		}
 	}
 
-	// .product-tabs__content
-
-	&__content {
-	}
-
 	// .product-tabs__item
-
 	&__item {
 		> *:not(:last-child) {
 			@include adaptiv-value("margin-bottom", 30, 10, 1);
@@ -396,19 +353,13 @@
 
 .similar {
 	@include adaptiv-value("margin-bottom", 115, 50, 1);
-	// .similar__container
-
-	&__container {
-	}
 
 	// .similar__title
-
 	&__title {
 		@include adaptiv-value("margin-bottom", 45, 20, 1);
 	}
 
 	// .similar__scrollbar
-
 	&__scrollbar {
 		position: relative;
 		width: 100%;
@@ -426,13 +377,11 @@
 	}
 
 	// .similar__row
-
 	&__row {
 		display: flex;
 	}
 
 	// .similar__column
-
 	&__column {
 		&:first-child {
 			flex: 0 0 320px;
@@ -445,7 +394,6 @@
 	}
 
 	// .similar__img
-
 	&__img {
 		padding: 0px 0px 100% 0px;
 		border-radius: 5px;
@@ -453,7 +401,6 @@
 	}
 
 	// .similar__wrapper
-
 	&__wrapper {
 		position: relative;
 		width: 100%;
@@ -462,7 +409,6 @@
 	}
 
 	// .similar__body
-
 	&__body {
 		min-width: 0;
 		display: flex;
@@ -470,7 +416,6 @@
 	}
 
 	// .similar__item
-
 	&__item {
 		flex: 0 0 320px;
 		padding: 0px 15px;
@@ -479,14 +424,13 @@
 .item-similar {
 	display: flex;
 	flex-direction: column;
-	// .item-similar__img
 
+	// .item-similar__img
 	&__img {
 		padding: 0px 0px 76.74% 0px;
 	}
 
 	// .item-similar__row
-
 	&__row {
 		display: flex;
 		align-items: center;
@@ -494,7 +438,6 @@
 	}
 
 	// .item-similar__label
-
 	&__label {
 		color: $colorOne;
 		@include adaptiv-value("font-size", 16, 14, 1);
@@ -510,8 +453,8 @@
 		max-width: 185px;
 		margin-bottom: 20px;
 	}
-	// .item-similar__point
 
+	// .item-similar__point
 	&__point {
 		width: 41px;
 		height: 41px;
@@ -531,7 +474,6 @@
 	}
 
 	// .item-similar__price
-
 	&__price {
 		color: $colorOne;
 		font-size: 20px;
@@ -551,18 +493,13 @@
 			}
 		}
 	}
-
-	// .item-similar__link
-
-	&__link {
-	}
 }
 //========================================================================================================================================================
 
 .testimonials {
 	@include adaptiv-value("margin-bottom", 125, 50, 1);
-	// .testimonials__container
 
+	// .testimonials__container
 	&__container {
 		max-width: 855px;
 		padding: 0px 15px;
@@ -574,8 +511,8 @@
 		position: relative;
 		@include adaptiv-value("margin-bottom", 35, 20, 1);
 	}
-	// .testimonials__sub-title
 
+	// .testimonials__sub-title
 	&__sub-title {
 		text-align: center;
 		color: $colorOne;
@@ -584,7 +521,6 @@
 	}
 
 	// .testimonials__title
-
 	&__title {
 		text-align: center;
 		color: $colorOne;
@@ -595,7 +531,6 @@
 	}
 
 	// .testimonials__wrapper
-
 	&__wrapper {
 		position: relative;
 		overflow: hidden;
@@ -603,7 +538,6 @@
 	}
 
 	// .testimonials__body
-
 	&__body {
 		display: flex;
 		width: 100%;
@@ -611,10 +545,6 @@
 		flex-direction: column;
 	}
 
-	// .testimonials__item
-
-	&__item {
-	}
 	&__scroll {
 		position: absolute;
 		top: 0;
@@ -643,15 +573,14 @@
 	padding-right: 25px;
 	padding-bottom: 30px;
 	padding-left: 25px;
-	// .item-testimonials__date
 
+	// .item-testimonials__date
 	&__date {
 		color: $colorEighteen;
 		margin-bottom: 5px;
 	}
 
 	// .item-testimonials__name
-
 	&__name {
 		color: $colorOne;
 		@include adaptiv-value("font-size", 18, 14, 1);
@@ -665,8 +594,8 @@
 			display: none;
 		}
 	}
-	// .item-testimonials__more
 
+	// .item-testimonials__more
 	&__more {
 		color: $colorFour;
 		font-weight: 500;
@@ -675,7 +604,6 @@
 	}
 
 	// .item-testimonials__label
-
 	&__label {
 		color: $colorEight;
 		font-size: 12px;
