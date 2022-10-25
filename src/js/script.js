@@ -1212,9 +1212,6 @@ $(document).ready(function () {
 		$('.form-edit-order__address-delivery-address').addClass('active');
 	});
 
-
-
-
 	$('.item-orders').click(function (event) {
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
@@ -1262,6 +1259,12 @@ $(document).ready(function () {
 			}
 		},
 	});
+
+
+	$('.item-unit-mobile').click(function (event) {
+		$(this).toggleClass('active').next().slideToggle(300);
+	});
+
 
 	if ($(window).width() < 991.98) {
 		$('.menu__link-arrow').click(function (event) {
