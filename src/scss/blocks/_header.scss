@@ -33,6 +33,11 @@
 		align-items: center;
 		position: relative;
 		z-index: 11;
+		svg{
+			path{
+				transition: all 0.3s ease;
+			}
+		}
 	}
 }
 
@@ -85,6 +90,7 @@
 
 	// .actions-top-header__item
 	&__item {
+		transition: all 0.3s ease;
 		&:not(:last-child) {
 			@include adaptiv-value("margin-right", 30, 10, 1);
 		}
@@ -108,14 +114,16 @@
 
 	// .actions-top-header__user
 	&__user {
-		img {
+		img{
 			max-width: 100%;
 		}
 	}
 
 	// .actions-top-header__cart
 	&__cart {
-		img {
+		display: flex;
+		align-items: flex-start;
+		img{
 			max-width: 100%;
 		}
 	}
@@ -125,6 +133,7 @@
 		display: block;
 		position: relative;
 		z-index: 1;
+		transition: all 0.3s ease;
 	}
 }
 
