@@ -166,8 +166,8 @@
 
 	&__wrapper {
 		@include adaptiv-value("margin-top", 65, 30, 0);
-		// position: relative;
-		// right: 20%;
+		position: relative;
+		right: 100px;
 	}
 
 	// .our-brands__body

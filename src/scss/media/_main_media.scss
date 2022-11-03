@@ -658,8 +658,9 @@
 @media (min-width: 1920.98px) {
 	.our-brands {
 		&__wrapper {
+			position: relative;
 			margin-top: 65px;
-			right: 200px;
+			right: 40px;
 		}
 		&__body {
 			height: 600px;
