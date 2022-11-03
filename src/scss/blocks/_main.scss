@@ -160,8 +160,7 @@
 .our-brands {
 	@include adaptiv-value("padding-top", 105, 50, 1);
 	@include adaptiv-value("margin-bottom", 105, 50, 1);
-	&__title {
-	}
+
 	// .our-brands__wrapper
 
 	&__wrapper {
