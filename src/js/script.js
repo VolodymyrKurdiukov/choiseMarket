@@ -1265,28 +1265,28 @@ $(document).ready(function () {
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
 
-	$(window).scroll(function () {
-		let top = $(document).scrollTop();
-		if (top > 100) {
-			$(".bottom-header-main,.menu__sub-list-main").css({
-				background: '#aaaaaa'
-			}).addClass('header-scroll');
-			$(".top-header").css({
-				display: 'none'
-			});
-		} else {
+	// $(window).scroll(function () {
+	// 	let top = $(document).scrollTop();
+	// 	if (top > 100) {
+	// 		$(".bottom-header-main,.menu__sub-list-main").css({
+	// 			background: '#aaaaaa'
+	// 		}).addClass('header-scroll');
+	// 		$(".top-header").css({
+	// 			display: 'none'
+	// 		});
+	// 	} else {
 
-			$(".bottom-header-main,.menu__sub-list-main").css({
-				background: 'rgba(42, 42, 42, 0.4)',
-				transition: ' all 0.3s ease'
-			}).removeClass('header-scroll');
-			$(".top-header").css({
-				display: 'block'
-			});
+	// 		$(".bottom-header-main,.menu__sub-list-main").css({
+	// 			background: 'rgba(42, 42, 42, 0.4)',
+	// 			transition: ' all 0.3s ease'
+	// 		}).removeClass('header-scroll');
+	// 		$(".top-header").css({
+	// 			display: 'block'
+	// 		});
 
 
-		}
-	});
+	// 	}
+	// });
 });
 jQuery(($) => {
 	if ($(window).width() < 991.98) {
