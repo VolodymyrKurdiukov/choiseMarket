@@ -1141,7 +1141,7 @@ if (quantityButtons.length > 0) {
 
 //========================================================================================================================================================
 
-new WOW().init();
+
 //========================================================================================================================================================
 
 $(document).ready(function () {
@@ -1280,7 +1280,7 @@ jQuery(($) => {
 		$(window).scroll(function () {
 			let top = $(document).scrollTop();
 			if (top > 100) {
-				$(".bottom-header-main,.menu__sub-list-main").css({
+				$(".bottom-header,.menu__sub-list").css({
 					background: '#aaaaaa'
 				});
 
@@ -1290,7 +1290,7 @@ jQuery(($) => {
 				});
 			} else {
 
-				$(".bottom-header-main,.menu__sub-list-main").css({
+				$(".bottom-header,.menu__sub-list").css({
 					background: 'rgba(42, 42, 42, 0.4)',
 					transition: ' all 0.3s ease'
 				});
@@ -1312,3 +1312,4 @@ topHeader.addEventListener('mouseenter', function () {
 	bottomHeader.style.opacity = '1';
 	bottomHeader.style.visibility = 'visible';
 });
+
