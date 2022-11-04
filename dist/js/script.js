@@ -1279,7 +1279,7 @@ jQuery(($) => {
 	if ($(window).width() > 991.98) {
 		$(window).scroll(function () {
 			let top = $(document).scrollTop();
-			if (top > 100) {
+			if (top > 50) {
 				$(".bottom-header,.menu__sub-list").css({
 					background: '#aaaaaa'
 				});

@@ -29,7 +29,7 @@
 <body>
 	<div class="wrapper">
 		<main class="page ">
-			<header class="header lock-padding">
+			<header data-wow-duration="2s" data-wow-delay="0.5s" class="header lock-padding animate__animated wow animate__fadeInDown">
 				<div class="header__top top-header">
 					<div class="top-header__container container">
 						<div class="top-header__row">
@@ -233,7 +233,7 @@
 			<form class="page__ordering ordering">
 				<div class="ordering__container container">
 					<div class="ordering__title">Оформление заказа</div>
-					<div class="ordering__shopper shopper-ordering">
+					<div class="ordering__shopper shopper-ordering animate__animated wow animate__fadeInUp">
 						<div class="shopper-ordering__label"><span>1</span> ПОКУПАТЕЛЬ</div>
 						<div class="shopper-ordering__name">Вы авторизованы как Иванов Иван (номер лояльности 333007003)</div>
 						<div class="shopper-ordering__credited">За этот месяц у Вас уже зачислено 60 Б</div>
@@ -269,7 +269,7 @@
 						<a href="#popupReward" class="popup-link shopper-ordering__reward btn btn-light">МОЯ ВЫГОДА</a>
 					</div>
 					<div class="ordering__row">
-						<div class="ordering__column">
+						<div class="ordering__column animate__animated wow animate__fadeInUp">
 							<div class="ordering__payments payments-ordering">
 								<div class="payments-ordering__label"><span>2</span>СПОСОБ ОПЛАТЫ</div>
 								<div class="payments-ordering__options">
@@ -294,7 +294,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="ordering__column">
+						<div class="ordering__column animate__animated wow animate__fadeInUp">
 							<div class="ordering__delivery delivery-ordering">
 								<div class="delivery-ordering__label"><span>3</span>СПОСОБ ДОСТАВКИ</div>
 								<div class="delivery-ordering__options">
@@ -790,6 +790,7 @@
 	
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
