@@ -27,6 +27,13 @@
 		}
 	}
 	.top-header {
+		&:hover {
+			.bottom-header {
+				opacity: 1;
+				visibility: visible;
+				pointer-events: all;
+			}
+		}
 		&__logo {
 			&:hover {
 				svg {
@@ -38,19 +45,20 @@
 		}
 	}
 	.actions-top-header {
-		&__lang,.lang__item {
+		&__lang,
+		.lang__item {
 			&:hover {
 				color: #7a934f;
 			}
 		}
-		&__item{
-			&:hover{
+		&__item {
+			&:hover {
 				transform: scale(1.1);
 			}
-			&-lang{
-				&:hover{
-				transform: scale(1);
-			}
+			&-lang {
+				&:hover {
+					transform: scale(1);
+				}
 			}
 		}
 	}

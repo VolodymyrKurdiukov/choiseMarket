@@ -280,7 +280,7 @@ ibg();
 
 let mainSlider = document.querySelectorAll('.main');
 if (mainSlider.length > 0) {
-		mainSlider = new Swiper('.main', {
+	mainSlider = new Swiper('.main', {
 		wrapperClass: "main__wrapper",
 		slideClass: "main__screen",
 		slidesPerView: 1,
@@ -303,7 +303,7 @@ if (mainSlider.length > 0) {
 
 let brandsSlider = document.querySelectorAll('.our-brands__wrapper');
 if (brandsSlider.length > 0) {
-		brandsSlider = new Swiper('.our-brands__wrapper', {
+	brandsSlider = new Swiper('.our-brands__wrapper', {
 		wrapperClass: "our-brands__body",
 		slideClass: "our-brands__item",
 		watchOverFlow: true,
@@ -337,7 +337,7 @@ if (brandsSlider.length > 0) {
 
 let topSlider = document.querySelectorAll('.top__wrapper-top');
 if (topSlider.length > 0) {
-		topSlider = new Swiper('.top__wrapper-top', {
+	topSlider = new Swiper('.top__wrapper-top', {
 		wrapperClass: "top__body-top",
 		slideClass: "top__item",
 		slidesPerView: 'auto',
@@ -358,7 +358,7 @@ if (topSlider.length > 0) {
 
 let topBottomSlider = document.querySelectorAll('.top__wrapper-bottom');
 if (topBottomSlider.length > 0) {
-		topBottomSlider = new Swiper('.top__wrapper-bottom', {
+	topBottomSlider = new Swiper('.top__wrapper-bottom', {
 		wrapperClass: "top__body-bottom",
 		slideClass: "top__item",
 		slidesPerView: 'auto',
@@ -379,7 +379,7 @@ if (topBottomSlider.length > 0) {
 
 let sliderCards = document.querySelectorAll('.slider-cards__wrapper');
 if (sliderCards.length > 0) {
-		sliderCards = new Swiper('.slider-cards__wrapper', {
+	sliderCards = new Swiper('.slider-cards__wrapper', {
 		wrapperClass: "slider-cards__body",
 		slideClass: "slider-cards__item",
 		slidesPerView: 'auto',
@@ -394,7 +394,7 @@ if (sliderCards.length > 0) {
 
 let businessSlider = document.querySelectorAll('.business__wrapper');
 if (businessSlider.length > 0) {
-		businessSlider = new Swiper('.business__wrapper', {
+	businessSlider = new Swiper('.business__wrapper', {
 		wrapperClass: "business__body",
 		slideClass: "business__item",
 		direction: 'vertical',
@@ -453,7 +453,7 @@ if (productCardSlider.length > 0) {
 
 let similarSlider = document.querySelectorAll('.similar__wrapper');
 if (similarSlider.length > 0) {
-		similarSlider = new Swiper('.similar__wrapper', {
+	similarSlider = new Swiper('.similar__wrapper', {
 		wrapperClass: "similar__body",
 		slideClass: "similar__item",
 		slidesPerView: 'auto',
@@ -474,7 +474,7 @@ if (similarSlider.length > 0) {
 
 let testimonialsSlider = document.querySelectorAll('.testimonials__wrapper');
 if (testimonialsSlider.length > 0) {
-		testimonialsSlider = new Swiper('.testimonials__wrapper', {
+	testimonialsSlider = new Swiper('.testimonials__wrapper', {
 		wrapperClass: "testimonials__body",
 		slideClass: "testimonials__item",
 		direction: 'vertical',
@@ -501,7 +501,7 @@ if (testimonialsSlider.length > 0) {
 
 let otherBrandsSlider = document.querySelectorAll('.other-brands__wrapper');
 if (otherBrandsSlider.length > 0) {
-		otherBrandsSlider = new Swiper('.other-brands__wrapper', {
+	otherBrandsSlider = new Swiper('.other-brands__wrapper', {
 		wrapperClass: "other-brands__body",
 		slideClass: "other-brands__item",
 		slidesPerView: 'auto',
@@ -522,7 +522,7 @@ if (otherBrandsSlider.length > 0) {
 
 let saleSlider = document.querySelectorAll('.sale__wrapper');
 if (saleSlider.length > 0) {
-		saleSlider = new Swiper('.sale__wrapper', {
+	saleSlider = new Swiper('.sale__wrapper', {
 		wrapperClass: "sale__body",
 		slideClass: "sale__item",
 		slidesPerView: 1,
@@ -545,7 +545,7 @@ if (saleSlider.length > 0) {
 
 let cartSlider = document.querySelectorAll('.cart__wrapper');
 if (cartSlider.length > 0) {
-		cartSlider = new Swiper('.cart__wrapper', {
+	cartSlider = new Swiper('.cart__wrapper', {
 		wrapperClass: "cart__body",
 		slideClass: "cart__item",
 		direction: 'vertical',
@@ -1137,7 +1137,9 @@ if (quantityButtons.length > 0) {
 		});
 	}
 }
+//========================================================================================================================================================
 
+//========================================================================================================================================================
 
 new WOW().init();
 //========================================================================================================================================================
@@ -1267,30 +1269,6 @@ $(document).ready(function () {
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
 
-	$(window).scroll(function () {
-		let top = $(document).scrollTop();
-		if (top > 100) {
-			$(".bottom-header-main,.menu__sub-list-main").css({
-				background: '#aaaaaa'
-			}).addClass('header-scroll');
-			// $(".top-header").css({
-			// 	display: 'none'
-			// });
-		} else {
-
-			$(".bottom-header-main,.menu__sub-list-main").css({
-				background: 'rgba(42, 42, 42, 0.4)',
-				transition: ' all 0.3s ease'
-			}).removeClass('header-scroll');
-			// $(".top-header").css({
-			// 	display: 'block'
-			// });
-
-
-		}
-	});
-
-	
 });
 jQuery(($) => {
 	if ($(window).width() < 991.98) {
@@ -1298,4 +1276,39 @@ jQuery(($) => {
 			$(this).toggleClass('active').next().slideToggle(300);
 		});
 	}
+	if ($(window).width() > 991.98) {
+		$(window).scroll(function () {
+			let top = $(document).scrollTop();
+			if (top > 100) {
+				$(".bottom-header-main,.menu__sub-list-main").css({
+					background: '#aaaaaa'
+				});
+
+				$(".bottom-header").css({
+					opacity: '0',
+					visibility: 'hidden'
+				});
+			} else {
+
+				$(".bottom-header-main,.menu__sub-list-main").css({
+					background: 'rgba(42, 42, 42, 0.4)',
+					transition: ' all 0.3s ease'
+				});
+
+				$(".bottom-header").css({
+					opacity: '1',
+					visibility: 'visible'
+				});
+			}
+		});
+	}
+});
+
+
+let topHeader = document.querySelector('.top-header');
+let bottomHeader = document.querySelector('.bottom-header');
+
+topHeader.addEventListener('mouseenter', function () {
+	bottomHeader.style.opacity = '1';
+	bottomHeader.style.visibility = 'visible';
 });
