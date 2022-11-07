@@ -346,7 +346,10 @@ if (topSlider.length > 0) {
 		observeParents: true,
 		observeSlideChildren: true,
 		speed: 1000,
-		loop: true,
+		autoplay: {
+			delay: 2500,
+		},
+		// loop: true,
 		scrollbar: {
 			el: '.top__scrollbar-top',
 			dragClass: "top__drag-scroll-top",
@@ -367,7 +370,10 @@ if (topBottomSlider.length > 0) {
 		observeParents: true,
 		observeSlideChildren: true,
 		speed: 1000,
-		loop: true,
+		autoplay: {
+			delay: 2500,
+		},
+		// loop: true,
 		scrollbar: {
 			el: '.top__scrollbar-bottom',
 			dragClass: "top__drag-scroll-bottom",
@@ -389,6 +395,9 @@ if (sliderCards.length > 0) {
 		observeSlideChildren: true,
 		speed: 1000,
 		loop: true,
+		autoplay: {
+			delay: 2500,
+		},
 	});
 };
 
@@ -511,6 +520,9 @@ if (otherBrandsSlider.length > 0) {
 		observeSlideChildren: true,
 		speed: 1000,
 		loop: true,
+		autoplay: {
+			delay: 2500,
+		},
 		scrollbar: {
 			el: '.other-brands__scrollbar',
 			dragClass: "other-brands__drag-scroll",
@@ -1280,6 +1292,11 @@ jQuery(($) => {
 		$(window).scroll(function () {
 			let top = $(document).scrollTop();
 			if (top > 50) {
+
+				$(".top-header").css({
+					boxShadow: 'rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px'
+				});
+
 				$(".bottom-header,.menu__sub-list").css({
 					background: '#aaaaaa'
 				});
@@ -1311,5 +1328,6 @@ let bottomHeader = document.querySelector('.bottom-header');
 topHeader.addEventListener('mouseenter', function () {
 	bottomHeader.style.opacity = '1';
 	bottomHeader.style.visibility = 'visible';
+	topHeader.style.boxShadow = 'none';
 });
 
