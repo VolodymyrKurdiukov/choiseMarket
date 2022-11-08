@@ -1150,25 +1150,7 @@ if (quantityButtons.length > 0) {
 	}
 }
 //========================================================================================================================================================
-// const observer = new IntersectionObserver((entries) => {
-// 	entries.forEach((entry) => {
-// 		if (entry.isIntersecting) {
-// 			document.querySelector('.partners__heart').forEach((link) => {
-// 				if (link.getAttribute('href').replace('#', '') === entry.target.id) {
-// 					link.classList.add('active');
-// 				} else {
-// 					link.classList.remove('active')
-// 				}
-// 			});
-// 		}
-// 	});
-// }, {
-// 	threshold: 0.7,
 
-// });
-// document.querySelector('.section').forEach(
-// 	(section) => observer.observe(section),
-// );
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		if (entry.isIntersecting) {
