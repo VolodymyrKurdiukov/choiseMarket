@@ -353,8 +353,6 @@
 	animation-name: fadeInUp;
 }
 
-
-
 @keyframes headrtbeat {
 	0% {
 		transform: scale(1);
@@ -368,14 +366,15 @@
 }
 
 
+
 @keyframes headrtbeatBig {
 	0% {
 		transform: scale(1);
 	}
-	50%{
+	50% {
 		transform: scale(1.5);
 	}
-	100%{
+	100% {
 		transform: scale(1);
 	}
 }
