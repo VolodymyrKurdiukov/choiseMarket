@@ -207,7 +207,12 @@
 		}
 		&__column {
 			&-ukraine {
-				display: none;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%) scale(10);
+				&.active {
+					transform: translate(-50%, -50%);
+				}
 			}
 		}
 	}
@@ -298,12 +303,18 @@
 	}
 	.partners {
 		margin-bottom: 50px;
+		&__heart{
+			display: none;
+		}
 		&__row {
 			margin: 0px -25px;
 		}
 		&__column {
 			padding: 0px 25px;
 			flex: 0 0 50%;
+			&-ukraine{
+				display: none;
+			}
 		}
 		&__bg {
 			display: none;

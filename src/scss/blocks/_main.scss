@@ -226,7 +226,6 @@
 	}
 }
 .item-our-brands {
-
 	// .item-our-brands__wrapper
 	&__wrapper {
 		position: relative;
@@ -252,7 +251,7 @@
 		left: 35px;
 		z-index: 1;
 		transition: all 0.3s ease;
-		img{
+		img {
 			max-width: 100%;
 		}
 	}
@@ -599,8 +598,8 @@
 	// .partners__wrapper
 	&__wrapper {
 		position: relative;
-		padding-top: 120px;
-		padding-bottom: 60px;
+		padding-top: 150px;
+		padding-bottom: 120px;
 	}
 
 	// .partners__row
@@ -623,25 +622,60 @@
 			text-align: right;
 		}
 		&-ukraine {
+			// position: absolute;
+			// width: 270px;
+			// height: 180px;
+			// left: 42.5%;
+			// z-index: 2;
+			// display: none;
 			position: absolute;
-			width: 270px;
-			height: 180px;
-			left: 42.5%;
+			width: 316px;
+			height: 316px;
+			left: 40%;
+			top: -50%;
 			z-index: 2;
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+			transition: all 1s ease;
+			transform: scale(10);
+
+			&.active {
+				opacity: 1;
+				visibility: visible;
+				transform: scale(1);
+			}
 		}
 	}
 
 	// .partners__label
 	&__label {
+		display: block;
 		color: $colorEleven;
 		font-size: 20px;
 		font-weight: 500;
 		text-transform: uppercase;
 		margin-bottom: 20px;
 		position: relative;
+		pointer-events: none;
+		
 		span {
 			display: inline-block;
 			margin-right: 15px;
+		}
+		&.active {
+			&::before,
+			&::after {
+				opacity: 1;
+				visibility: visible;
+				transition: all 0.3s ease;
+			}
+		}
+		&::before,
+		&::after {
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.3s ease;
 		}
 		&-01 {
 			&::before {
@@ -714,6 +748,23 @@
 		line-height: 130%;
 	}
 
+	&__heart {
+		position: absolute;
+		top: 33%;
+		left: 52%;
+		z-index: 1;
+		opacity: 1;
+		visibility: visible;
+		pointer-events: none;
+		transition: all 1s ease;
+		transform: scale(1);
+		animation: headrtbeatBig 1.5s ease infinite;
+		&.active {
+			opacity: 0;
+			visibility: hidden;
+			transform: scale(10);
+		}
+	}
 	// .partners__bg
 	&__bg {
 		position: absolute;
@@ -732,6 +783,7 @@
 		top: 0;
 		left: 0;
 		z-index: 1;
+		animation: headrtbeat 1.5s ease infinite;
 	}
 
 	// .partners__buttons
@@ -739,6 +791,7 @@
 		align-self: center;
 	}
 }
+
 //========================================================================================================================================================
 
 .charity {
