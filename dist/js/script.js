@@ -1178,7 +1178,7 @@ const observer = new IntersectionObserver((entries) => {
 		}
 	});
 }, {
-	threshold: 0.7,
+	threshold: 1,
 });
 document.querySelectorAll('section').forEach(
 	(section) => observer.observe(section),
