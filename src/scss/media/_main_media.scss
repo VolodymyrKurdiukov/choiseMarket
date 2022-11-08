@@ -305,6 +305,9 @@
 		margin-bottom: 50px;
 		&__heart{
 			display: none;
+			&.active{
+				display: none;
+			}
 		}
 		&__row {
 			margin: 0px -25px;
