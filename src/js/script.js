@@ -1408,11 +1408,11 @@ $(document).ready(function () {
 
 });
 jQuery(($) => {
-	if ($(window).width() < 991.98) {
-		$('.menu__link-arrow-mobile').click(function (event) {
-			$(this).toggleClass('active').next().slideToggle(300);
-		});
-	}
+	// if ($(window).width() < 991.98) {
+	// 	$('.menu__link-arrow-mobile').click(function (event) {
+	// 		$(this).toggleClass('active').next().slideToggle(300);
+	// 	});
+	// }
 	if ($(window).width() > 991.98) {
 		$(window).scroll(function () {
 			let top = $(document).scrollTop();

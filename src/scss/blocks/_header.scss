@@ -218,6 +218,7 @@
 				border-left: 4px solid rgba(0, 0, 0, 0);
 				border-right: 4px solid rgba(0, 0, 0, 0);
 				border-top: 4px solid #fff;
+				display: none;
 			}
 		}
 		&-arrow-mobile{
@@ -227,6 +228,7 @@
 
 	// .menu__sub-list
 	&__sub-list {
+		display: none;
 		position: absolute;
 		top: 100%;
 		left: 0;
