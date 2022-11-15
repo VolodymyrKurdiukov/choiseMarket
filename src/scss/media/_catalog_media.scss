@@ -13,7 +13,8 @@
 			background-color: #fff;
 			border-radius: 5px;
 			transform: scale(1.1);
-			.item-catalog__link {
+			.item-catalog__link,
+			.quantity-product-card {
 				opacity: 1;
 				visibility: visible;
 				pointer-events: all;
@@ -82,11 +83,11 @@
 				right: 2px;
 				transform: rotate(45deg);
 			}
-			&::before{
+			&::before {
 				left: -20%;
 			}
-			svg{
-				path{
+			svg {
+				path {
 					fill: $colorFour;
 				}
 			}
@@ -97,10 +98,10 @@
 						fill: #000;
 					}
 				}
-				&::after{
+				&::after {
 					transform: rotate(-45deg);
 				}
-				&::before{
+				&::before {
 					left: -50%;
 				}
 			}
@@ -132,6 +133,14 @@
 		}
 		&__item {
 			margin: 0;
+		}
+	}
+	.item-catalog {
+		.quantity-product-card {
+			display: block;
+			&__box {
+				margin-top: 10px;
+			}
 		}
 	}
 }

@@ -1,7 +1,7 @@
 .cards {
 	@include adaptiv-value("padding-top", 200, 80, 1);
 	@include adaptiv-value("padding-bottom", 100, 30, 1);
-
+	
 	// .cards__row
 	&__row {
 		display: flex;
