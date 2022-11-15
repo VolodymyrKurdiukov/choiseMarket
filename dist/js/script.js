@@ -667,6 +667,78 @@ if (cardsPrograms.length > 0) {
 	}
 };
 
+
+let cardsPopupsStore = document.querySelectorAll('.popup-cards-store');
+if (cardsPopupsStore.length > 0) {
+	if (document.documentElement.clientWidth > 991.98) {
+		let item01 = document.querySelector("#popupCards01");
+		let item02 = document.querySelector("#popupCards02");
+		let item03 = document.querySelector("#popupCards03");
+		let item04 = document.querySelector("#popupCards04");
+
+		let cardsWrapper01 = document.querySelector("#cardsWrapper01");
+		let cardsWrapper02 = document.querySelector("#cardsWrapper02");
+		let cardsWrapper03 = document.querySelector("#cardsWrapper03");
+		let cardsWrapper04 = document.querySelector("#cardsWrapper04");
+
+		cardsWrapper01.onmousemove = function (e) {
+			item01.style.position = 'fixed';
+			item01.style.left = e.clientX + 'px';
+			item01.style.top = e.clientY + 'px';
+		};
+		cardsWrapper02.onmousemove = function (e) {
+			item02.style.position = 'fixed';
+			item02.style.left = e.clientX + 'px';
+			item02.style.top = e.clientY + 'px';
+		};
+		cardsWrapper03.onmousemove = function (e) {
+			item03.style.position = 'fixed';
+			item03.style.left = e.clientX + 'px';
+			item03.style.top = e.clientY + 'px';
+		};
+		cardsWrapper04.onmousemove = function (e) {
+			item04.style.position = 'fixed';
+			item04.style.left = e.clientX + 'px';
+			item04.style.top = e.clientY + 'px';
+		};
+	}
+};
+
+let cardsPopupsCompany = document.querySelectorAll('.popup-cards-company');
+if (cardsPopupsCompany.length > 0) {
+	if (document.documentElement.clientWidth > 991.98) {
+		let item01 = document.querySelector("#popupCardsCompany01");
+		let item02 = document.querySelector("#popupCardsCompany02");
+		let item03 = document.querySelector("#popupCardsCompany03");
+		let item04 = document.querySelector("#popupCardsCompany04");
+
+		let cardsWrapper01 = document.querySelector("#cardsWrapperCompany01");
+		let cardsWrapper02 = document.querySelector("#cardsWrapperCompany02");
+		let cardsWrapper03 = document.querySelector("#cardsWrapperCompany03");
+		let cardsWrapper04 = document.querySelector("#cardsWrapperCompany04");
+
+		cardsWrapper01.onmousemove = function (e) {
+			item01.style.position = 'fixed';
+			item01.style.left = e.clientX + 'px';
+			item01.style.top = e.clientY + 'px';
+		};
+		cardsWrapper02.onmousemove = function (e) {
+			item02.style.position = 'fixed';
+			item02.style.left = e.clientX + 'px';
+			item02.style.top = e.clientY + 'px';
+		};
+		cardsWrapper03.onmousemove = function (e) {
+			item03.style.position = 'fixed';
+			item03.style.left = e.clientX + 'px';
+			item03.style.top = e.clientY + 'px';
+		};
+		cardsWrapper04.onmousemove = function (e) {
+			item04.style.position = 'fixed';
+			item04.style.left = e.clientX + 'px';
+			item04.style.top = e.clientY + 'px';
+		};
+	}
+};
 //========================================================================================================================================================
 
 let selecton = document.querySelectorAll('.filter');
@@ -1337,7 +1409,7 @@ $(document).ready(function () {
 });
 jQuery(($) => {
 	if ($(window).width() < 991.98) {
-		$('.menu__link-arrow').click(function (event) {
+		$('.menu__link-arrow-mobile').click(function (event) {
 			$(this).toggleClass('active').next().slideToggle(300);
 		});
 	}

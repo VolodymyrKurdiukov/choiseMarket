@@ -1,6 +1,44 @@
 @media (any-hover: hover) {
+	.popup-cards {
+		&__item {
+			&:hover {
+				.item-popup-cards__bg {
+					transform: scale(0.9);
+				}
+				.item-popup-cards__move {
+					display: block;
+				}
+			}
+		}
+	}
 }
 
+@media (max-width: 991.98px) {
+	.popup-cards {
+		&__row{
+			flex-wrap: wrap;
+		}
+		&__column{
+			flex: 0 0 50%;
+			margin-bottom: 20px;
+			&:nth-child(even) {
+			margin-top: 0px;
+		}
+		}
+	}
+	.item-popup-cards {
+		&__move {
+			display: block;
+			position: absolute;
+			top: 80%;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		&__bg{
+			padding: 0px 0px 100% 0px;
+		}
+	}
+}
 @media (max-width: 575.98px) {
 	.popup-authorization {
 		&__row {
@@ -45,9 +83,22 @@
 		&__column {
 			flex: 1 1 100%;
 			padding: 0;
-			&:last-child{
+			&:last-child {
 				display: none;
 			}
+		}
+	}
+	.item-popup-cards{
+		&__bg{
+			padding: 0px 0px 170% 0px;
+		}
+		&__move{
+			font-size: 10px;
+		}
+	}
+	.popup-cards {
+		&__content{
+			padding: 50px 20px 0px 20px;
 		}
 	}
 }
