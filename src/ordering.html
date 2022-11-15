@@ -29,7 +29,8 @@
 <body>
 	<div class="wrapper">
 		<main class="page ">
-			<header class="header lock-padding">
+			<header data-wow-duration="2s" data-wow-delay="0.5s"
+				class="header lock-padding animate__animated wow animate__fadeInDown">
 				<div class="header__top top-header">
 					<div class="top-header__container container">
 						<div class="top-header__row">
@@ -134,7 +135,7 @@
 												<img src="img/icons/user-icon.svg" alt="user-icon"></a>
 										</li>
 										<li class="actions-top-header__item">
-											<a href="#" class="actions-top-header__cart">
+											<a href="cart.html" class="actions-top-header__cart">
 												<img src="img/icons/shopping-bag.svg" alt="shopping-bag"><span>0</span></a>
 										</li>
 										<li class="actions-top-header__item actions-top-header__item-lang">
@@ -155,7 +156,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="header__bottom bottom-header">
+				<div class="header__bottom bottom-header bottom-header">
 					<div class="bottom-header__container container">
 						<div class="bottom-header__menu menu">
 							<div class="menu__icon">
@@ -164,47 +165,52 @@
 							<nav class="menu__body">
 								<ul class="menu__list">
 									<li class="menu__item">
-										<div class="menu__link menu__link-arrow">магазин</div>
-										<ul class="menu__sub-list">
+										<a href="#popup-store" class="menu__link menu__link-arrow popup-link">магазин</a>
+										<span class="menu__link-arrow-mobile"></span>
+										<ul class="menu__sub-list menu__sub-list">
 											<li class="menu__sub-item">
-												<a href="#" class="menu__sub-link">магазин</a>
+												<a href="catalog.html" class="menu__sub-link">Каталог</a>
 											</li>
 											<li class="menu__sub-item">
-												<a href="#" class="menu__sub-link">магазин</a>
+												<a href="health.html" class="menu__sub-link">Здоровье</a>
 											</li>
 											<li class="menu__sub-item">
-												<a href="#" class="menu__sub-link">магазин</a>
-											</li>
-										</ul>
-									</li>
-									<li class="menu__item">
-										<div class="menu__link menu__link-arrow">о компании</div>
-										<ul class="menu__sub-list">
-											<li class="menu__sub-item">
-												<a href="#" class="menu__sub-link">о компании</a>
-											</li>
-											<li class="menu__sub-item">
-												<a href="#" class="menu__sub-link">о компании</a>
-											</li>
-											<li class="menu__sub-item">
-												<a href="#" class="menu__sub-link">о компании</a>
+												<a href="brandPage.html" class="menu__sub-link">страница бренда</a>
 											</li>
 										</ul>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">бизнес С choice</a>
+										<a href="#popup-about-company" class="menu__link menu__link-arrow popup-link">о компании</a>
+										<span class="menu__link-arrow-mobile"></span>
+										<ul class="menu__sub-list menu__sub-list">
+											<li class="menu__sub-item">
+												<a href="aboutCompanyPage.html" class="menu__sub-link">о компании</a>
+											</li>
+											<li class="menu__sub-item">
+												<a href="aboutProductPage.html" class="menu__sub-link">О ПРОДУКЦИИ</a>
+											</li>
+											<li class="menu__sub-item">
+												<a href="aboutProductionPage.html" class="menu__sub-link">О ПРОИЗВОДСТВЕ</a>
+											</li>
+											<li class="menu__sub-item">
+												<a href="#" class="menu__sub-link">о компании</a>
+											</li>
+										</ul>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">БРЕНДЫ КОМПАНИИ</a>
+										<a href="business.html" class="menu__link">бизнес С choice</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">БЛАГОТВОРИТЕЛЬНОСТЬ</a>
+										<a href="brandPage.html" class="menu__link">БРЕНДЫ КОМПАНИИ</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">контакты</a>
+										<a href="volunteer.html" class="menu__link">БЛАГОТВОРИТЕЛЬНОСТЬ</a>
 									</li>
 									<li class="menu__item">
-										<a href="#" class="menu__link">ПРОГРАММЫ</a>
+										<a href="contacts.html" class="menu__link">контакты</a>
+									</li>
+									<li class="menu__item">
+										<a href="programs.html" class="menu__link">ПРОГРАММЫ</a>
 									</li>
 								</ul>
 								<a href="#popupAuthorization" class="menu__btn btn btn-menugreen popup-link">Вход в

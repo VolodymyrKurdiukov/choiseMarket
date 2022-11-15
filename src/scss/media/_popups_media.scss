@@ -28,14 +28,20 @@
 	}
 	.item-popup-cards {
 		&__move {
+
 			display: block;
 			position: absolute;
-			top: 80%;
-			left: 50%;
-			transform: translate(-50%);
+			bottom: 10px;
+			left: 10px;
+			transform: translate(0%, 0%);
 		}
 		&__bg{
 			padding: 0px 0px 100% 0px;
+		}
+		&__label{
+			top: 10px;
+			left: 10px;
+			transform: translate(0%, 0%);
 		}
 	}
 }
