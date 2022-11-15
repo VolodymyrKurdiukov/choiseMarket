@@ -1418,24 +1418,26 @@ jQuery(($) => {
 			let top = $(document).scrollTop();
 			if (top > 50) {
 
-				$(".bottom-header,.menu__sub-list").css({
+				$(".bottom-header-main,.menu__sub-list-main").css({
 					background: '#aaaaaa'
 				});
 
 				$(".bottom-header").css({
 					opacity: '0',
-					visibility: 'hidden'
+					visibility: 'hidden',
+					transition: ' all 0.3s ease'
 				});
 			} else {
 
-				$(".bottom-header,.menu__sub-list").css({
+				$(".bottom-header-main,.menu__sub-list-main").css({
 					background: 'rgba(42, 42, 42, 0.4)',
 					transition: ' all 0.3s ease'
 				});
 
 				$(".bottom-header").css({
 					opacity: '1',
-					visibility: 'visible'
+					visibility: 'visible',
+					transition: ' all 0.3s ease'
 				});
 			}
 		});
